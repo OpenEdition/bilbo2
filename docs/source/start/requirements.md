@@ -1,6 +1,6 @@
 # Requirements #
 
-BilboV2 can be installed on many Linux distributions but has been tested only on debian and ubuntu distributions with the following prerequisites:
+Bilbo2 can be installed on many Linux distributions but has been tested only on debian and ubuntu distributions with the following prerequisites:
 
 * **python3.5**
 * **gcc** and **g++** (used by LIBSVM compilation)
@@ -11,7 +11,7 @@ BilboV2 can be installed on many Linux distributions but has been tested only on
 
 ## Libraries ##
 
-BilboV2 was tested on Linux/Debian distribution (Debian stretch release). It is running on python versions equal to or greater than 3.5. 
+Bilbo2 was tested on Linux/Debian distribution (Debian stretch release). It is running on python versions equal to or greater than 3.5. 
 
 
 ### Debian ###

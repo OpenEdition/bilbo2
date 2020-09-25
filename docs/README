@@ -4,7 +4,7 @@ Sphynx installation
 pip3 install --upgrade pip
 pip3 install sphinx
 
-cd bilbo_v2/docs
+cd bilbo2/docs
 
 You should not use (sphinx-quickstart ; add sphinx.ext.autodocs in extension) 
 

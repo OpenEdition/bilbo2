@@ -1,6 +1,6 @@
 # Configuration File options #
 
-Bilbo comes with a `pipeline_config` file (located at the bilbo/config of the bilbo_v2 directory). Actually, there is two pipeline_config available, one is for annotating bibliographies references(tag `<bibl>` in the TEI/XML format), one other is for annotating footnote (tag `note` in the TEI/XML format). You can modified each of the options presented in this file.Currently, the file is an INI configuration file. In future we expect to handle json or XML file configuration.
+Bilbo comes with a `pipeline_config` file (located at the bilbo/config of the bilbo2 directory). Actually, there is two pipeline_config available, one is for annotating bibliographies references(tag `<bibl>` in the TEI/XML format), one other is for annotating footnote (tag `note` in the TEI/XML format). You can modified each of the options presented in this file.Currently, the file is an INI configuration file. In future we expect to handle json or XML file configuration.
 As expected, each module of Bilbo can run on his own. A series (not all) of parsing options are available and can be set with arg cli python running.
 
 ## PIPELINE ##

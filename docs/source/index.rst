@@ -1,9 +1,9 @@
-.. bilboV2 documentation master file, created by
+.. bilbo2 documentation master file, created by
    sphinx-quickstart on Wed Jul 10 09:39:15 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to bilboV2's documentation!
+Welcome to bilbo2's documentation!
 ===================================
 
 `BILBO V2 <https://github.com/OpenEdition/bilbo>`_ is an open source software for automatic annotation of bibliographic reference. It provides the segmentation and tagging of input string.

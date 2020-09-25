@@ -1,7 +1,7 @@
 # Demonstration
 
 
-There is a online demonstration of BilboV2
+There is a online demonstration of Bilbo2
 * [http://openedition.huma-num.fr/bilbo-api/](http://openedition.huma-num.fr/bilbo-api/) 
 
 In this demonstrator, only bibliographic reference and footnote is processing. The corpus is trained on french and english dataset. 

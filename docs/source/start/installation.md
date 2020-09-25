@@ -12,8 +12,8 @@ To install the last stable version on a Unix system, open a console and enter:
 
 
 ```console
-git clone https://github.com/openedition/bilbo_v2.git
-cd bilbo_v2
+git clone https://github.com/openedition/bilbo2.git
+cd bilbo2
 git checkout `git describe --tags --abbrev=0`
 python3 setup.py install --user
 ```
@@ -21,25 +21,25 @@ python3 setup.py install --user
 ## Development version ##
 If you wish to install the development version, open a console and enter:
 ```console
-git clone https://github.com/openedition/bilbo_v2.git
-cd bilbo_v2
+git clone https://github.com/openedition/bilbo2.git
+cd bilbo2
 python3 setup.py install --user
 ```
 
 
-## Uninstall bilboV2 ##
+## Uninstall bilbo2 ##
 
-For uninstall bilboV2:
+For uninstall bilbo2:
 ```bash
-pip3 uninstall bilboV2
+pip3 uninstall bilbo2
 ```
 
-For remove and clean your local bilboV2 repositories: 
+For remove and clean your local bilbo2 repositories: 
 
 ```bash
-cd bilbo_v2
+cd bilbo2
 rm -rvf build/
-rm -rvf bilboV2.egg-info/
+rm -rvf bilbo2.egg-info/
 rm -rvf dist/
 ```
 

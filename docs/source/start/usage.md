@@ -2,7 +2,7 @@
 
 Keep in mind that bilbo has already been trained on a french and english annotated xml corpus.
 It is trained on `<note>` and `<bibl>` section.
-By default, bilboV2 is running (for annotation) on a specified pipeline with a default pre-trained model (french and english languages on `<bibl>` tag).   
+By default, bilbo2 is running (for annotation) on a specified pipeline with a default pre-trained model (french and english languages on `<bibl>` tag).   
 
 
 ## Command Line Interface API ##
@@ -11,7 +11,7 @@ By default, bilboV2 is running (for annotation) on a specified pipeline with a d
 For an overview of different features and CLI command just launch in a shell :
 
 ```bash
-cd bilbo_v2
+cd bilbo2
 bash bilbo/tests/bilbo_demo.sh  -v
 ```
 
@@ -20,7 +20,7 @@ bash bilbo/tests/bilbo_demo.sh  -v
 You will see that a quick use, to annotate your bibliographics references (indicate as `<bibl>` in TEI) just launch : 
 
 ```bash
-cd bilbo_v2
+cd bilbo2
 python3 -m bilbo.bilbo --action tag -i PATH_TO_XMLFILE -o XML_OUTPUT_TAGGED
 ```
 
@@ -29,7 +29,7 @@ Currently the config file pipeline_note.cfg is available.
 
 
 ```bash
-cd bilbo_v2
+cd bilbo2
 python3 -m bilbo.bilbo --action tag -t note -c bilbo/config/pipeline_note.cfg -i PATH_TO_XMLFILE -o XML_OUTPUT_TAGGED
 ```
 

@@ -1,6 +1,6 @@
 # Knowledge Base #
 
-Knowledge Base are located in resources/ path at the root at bilbo_v2 . There are splitted in three ways:
+Knowledge Base are located in resources/ path at the root at bilbo2 . There are splitted in three ways:
 * Training Corpus [corpus](#corpus)
 * External List [external](#external)
 * Model and specific pattern [model](#model)

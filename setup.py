@@ -41,7 +41,7 @@ os.chdir(cwd)
 
 
 setup(
-    name = 'bilboV2',
+    name = 'bilbo2',
     version = '1.0',
     packages = find_packages(),
     author = "OpenEdition Lab",
