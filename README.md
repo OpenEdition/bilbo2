@@ -70,6 +70,10 @@ As external softwares, it is used `python-crfsuite`_ for CRF learning and infere
 
 Feel free to submit ideas, bugs reports, pull requests or regular patches.
 
+
+
+## Tests
+
 In order to run tests, launch:
 
 ```
