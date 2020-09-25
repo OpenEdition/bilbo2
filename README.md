@@ -26,7 +26,7 @@ User installation
 python3 setup.py install --user
 ```
 
-The documentation includes more detailed [Installation Instructions](https://readthedocs.org/projects/bilbo2-openedition/start/installation.html)
+The documentation includes more detailed [Installation Instructions](https://bilbo2-openedition.readthedocs.io/en/latest/start/installation.html)
 
 
 ## Usage
