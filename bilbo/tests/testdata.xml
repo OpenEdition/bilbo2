@@ -1,0 +1,10 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<head><!-- staticText--> header</head>
+<p>
+<bibl><hi>Axtell R.L., </hi> <p>2002,</p> « Population growth »,. </bibl>
+<note place="foot" n="1">Gros, Christian, « La nation», <hi rendition="#style03">Hérodote</hi>, 2000, 99, p. 107-108.</note>
+<bibl><hi>Orban M., Faath E., 2017, « <title>Wikipedia</title>, <title level="journal">bibliographies </title> », </hi> OpenEdition Press, Marseille.</bibl>
+<bibl>LAST bibl</bibl>
+<note place="foot" n="2"><p>L’évolution des systèmes urbains.</p></note>
+</p>
+</TEI>

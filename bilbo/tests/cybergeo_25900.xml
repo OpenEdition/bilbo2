@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://lodel.org/ns/tei.openedition.1.5.2/tei.openedition.1.5.2.xsd">
+<body>Avant la note<note place="foot" n="1"><p> <ref target="http://jasss.soc.surrey.ac.uk/">http://jasss.soc.surrey.ac.uk</ref> </p></note> Après <hi rendition="#style01"><hi xml:lang="en">in</hi></hi><note place="foot" n="2"><p>’évolution des systèmes urbains.</p></note><bibl>FAUSSE BIBL</bibl>
+<note place="foot" n="3"><p><ref target="ftn1">1</ref> Gros, Christian, « La nation en question : identité ou métissage », <hi rendition="#style03">Hérodote</hi>, 2000, 99, p. 107-108.</p></note>
+</body>
+<bibl><hi xml:lang="en">Amblard F., Bommel P., Rouchier J., 2007, « Assessment and validation of multi-agent models », </hi><hi rendition="#style01"><hi xml:lang="en">in</hi></hi><hi xml:lang="en"> Phan D. and Amblard F. (eds), </hi><hi rendition="#style01"><hi xml:lang="en">Multi-Agent Modelling and Simulation in the Social and Human Sciences</hi></hi><hi xml:lang="en">, Bardwell Press, Oxford.</hi></bibl>
+<bibl><hi xml:lang="en">Axtell R.L., Epstein J.M., Dean J.S., Gumerman G.J., Swedlund A.C., Harburger J., Chakravarty S., Hammond R., Parker J., Parker M., 2002, « Population growth and collapse in a multiagent model of the kayenta anasazi in long house valley », </hi><hi rendition="#style01"><hi xml:lang="en">PNAS</hi></hi><hi xml:lang="en">, vol. 99 (Suppl 3), 7275.</hi></bibl>
+</TEI>

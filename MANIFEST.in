@@ -1,0 +1,4 @@
+include *.md *.txt
+include docs/*.txt
+include bilbo/stylesheets/*.xsl
+

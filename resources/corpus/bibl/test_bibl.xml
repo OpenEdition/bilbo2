@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://lodel.org/ns/tei.openedition.1.5.2/tei.openedition.1.5.2.xsd">
+<teiHeader>
+<biblFull>
+<respStmt>
+	<resp>auteur</resp>
+	<name>Clara Schmitt</name>
+	<resp>auteur</resp>
+	<name>Denise Pumain</name>
+</respStmt>
+</biblFull>
+
+<encodingDesc>
+<application version="1.0" ident="Lodel">
+<label>Lodel</label>
+<desc><ref target="http://www.tei-c.org/">We use TEI</ref></desc>
+</application>
+<tagsDecl>
+<rendition xml:id="style01" scheme="css">font-style:italic;</rendition>            </tagsDecl>
+</encodingDesc>
+</teiHeader>
+<body>
+<div type="div1"><head subtype="level1">La modélisation multi-agents des interactions société-environnement dans le temps long</head><p>En sciences sociales, et particulièrement en géographie et archéologie, l’utilisation du paradigme des systèmes complexes et de la modélisation par des systèmes multi-agents est en pleine expansion, comme en témoigne le nombre grandissant d’articles, de livres consacrés à ce type de travaux (par exemple : Kohler, van der Leeuw, 2007, Heppenstall <hi rendition="#style01">et al.,</hi> 2011 et même la parution de revues spécialisées comme <hi rendition="#style01">JASSS : Journal of Artificial Societies and Social Simulation</hi><note place="foot" n="1"><p> <ref target="http://jasss.soc.surrey.ac.uk/">http://jasss.soc.surrey.ac.uk</ref> </p></note>). En effet, l’approche multi-agents s’avère être un outil très puissant pour caractériser et comprendre les systèmes sociogéographiques complexes<note place="foot" n="2"><p> Récemment ont débuté deux projets de recherche qui concentrent leurs efforts sur le développement de modèles multi-agents d’évolution de sociétés. Le projet ANR Transmondyn (<ref target="http://www.transmondyn.parisgeo.cnrs.fr/">http://www.transmondyn.parisgeo.cnrs.fr/</ref>) porte sur les grandes transitions dans l’évolution des systèmes de peuplement dans le temps long : l’enjeu de modélisation est de caractériser les relations entre les contraintes environnementales, les interactions sociales et les innovations pour comprendre les évolutions des formes du peuplement. Le projet ERC GeoDiverCity (<ref target="http://geodivercity.parisgeo.cnrs.fr/blog/">http://geodivercity.parisgeo.cnrs.fr/blog/</ref>) porte sur la définition d’un ensemble de faits stylisés résumant les connaissances sur la dynamique des systèmes urbains complexes depuis l’émergence de l’urbanisation jusqu’aux dynamiques actuelles. Les faits stylisés ainsi définis servent de base pour la construction de nouveaux modèles explicatifs des dynamiques d’évolution des systèmes urbains.</p></note>
+</p>
+</div>
+</body>
+<bibl><hi xml:lang="en">Amblard F., Bommel P., Rouchier J., 2007, « Assessment and validation of multi-agent models », </hi><hi rendition="#style01"><hi xml:lang="en">in</hi></hi><hi xml:lang="en"> Phan D. and Amblard F. (eds), </hi><hi rendition="#style01"><hi xml:lang="en">Multi-Agent Modelling and Simulation in the Social and Human Sciences</hi></hi><hi xml:lang="en">, Bardwell Press, Oxford.</hi></bibl>
+<bibl><hi xml:lang="en">Axtell R.L., Epstein J.M., Dean J.S., Gumerman G.J., Swedlund A.C., Harburger J., Chakravarty S., Hammond R., Parker J., Parker M., 2002, « Population growth and collapse in a multiagent model of the kayenta anasazi in long house valley », </hi><hi rendition="#style01"><hi xml:lang="en">PNAS</hi></hi><hi xml:lang="en">, vol. 99 (Suppl 3), 7275.</hi></bibl>
+
+</TEI>

@@ -1,0 +1,23 @@
+Normally, you just have to laun
+
+Sphynx installation
+pip3 install --upgrade pip
+pip3 install sphinx
+
+cd bilbo_v2/docs
+
+You should not use (sphinx-quickstart ; add sphinx.ext.autodocs in extension) 
+
+
+just launch:
+sphinx-apidoc -f -o source/ ../bilbo/
+
+
+If you want to edit html do:
+make html
+pip3 install recommonmark
+pip3 install sphinx-markdown-tables
+pip3 install sphinx_rtd_theme
+
+
+See html in bilbo-docs

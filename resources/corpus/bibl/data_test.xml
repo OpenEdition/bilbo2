@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd">
+
+<listBibl>
+
+<bibl><author><surname>KANOHIN</surname> <forename full="init">F.</forename></author><c
+                type="comma">,</c>
+              <author><surname>SALEY</surname> <forename full="init">M.B.</forename></author> et
+                  <author><surname>SAVANÉ</surname> <forename full="init">I.</forename></author>
+              <c type="parenthesis_left">(</c><edition><date>2009</date></edition><c
+                type="parenthesis_right">)</c>
+              <c type="hyphen">-</c><hi rend="italic"> </hi><title level="a">Impacts de la variabilité
+                climatique sur les ressources en eau et les activités humaines en zone tropicale
+                humide: cas de la région de Daoukro en Côte d'Ivoire</title><c type="point">.</c>
+              <hi rend="italic"><title level="j">European Journal of Scientific Research</title></hi><c type="comma">,</c>
+              <abbr type="contraction">vol.</abbr> <biblScope type="vol">26</biblScope><c type="comma"
+                >,</c>
+              <abbr type="contraction">n°</abbr> <biblScope type="issue">2</biblScope><c type="comma"
+                >,</c>
+              <abbr type="contraction">p.</abbr> <biblScope type="pp">209­222</biblScope><c
+                type="point">.</c></bibl>
+<bibl><author><surname>Acerra</surname>, <forename>Martine</forename></author> &amp;
+                  <author><forename>Jean</forename>
+                <surname>Meyer</surname></author>
+              <lb/><edition><date>1988</date></edition><c type="point">.</c>
+              <hi rend="italic"><title level="m">Marines et Révolution</title></hi><c type="point"
+                >.</c>
+              <pubPlace>Rennes</pubPlace> <c type="colon">:</c>
+              <publisher>Ouest-France</publisher><c type="point">.</c></bibl>
+<bibl><author><surname>Sanchez</surname>
+                <c type="parenthesis_left">(</c><forename>Jean-Lucien</forename><c
+                  type="parenthesis_right">)</c></author><c type="comma">,</c>
+              <hi rend="italic"><title level="u">La relégation des récidivistes en Guyane française.
+                  Les relégués au bagne colonial de Saint-Jean-du-Maroni, 1887-1953</title></hi><c
+                type="comma">,</c>
+              <title level="u">thèse de doctorat</title><c type="comma">,</c>
+              <distributor>EHESS</distributor><c type="comma">,</c>
+              <pubPlace>Paris</pubPlace><c type="comma">,</c>
+              <edition><date>2009</date></edition><c type="point">.</c></bibl>
+<bibl><author><surname>Eber</surname>
+                <c type="parenthesis_left">(</c><forename>Nicolas</forename><c
+                  type="parenthesis_right">)</c></author><c type="comma">,</c>
+              <title level="m"><hi rend="italic">Le dilemme du </hi><hi rend="italic"
+                >prisonnier</hi></title><c type="comma">,</c>
+              <pubPlace>Paris</pubPlace><c type="comma">,</c>
+              <publisher>La Découverte</publisher><c type="comma">,</c>
+              <edition><date>2006</date></edition><c type="point">.</c></bibl>
+<bibl><author><surname>B<hi font-variant="small-caps">ailleux</hi></surname></author>
+              <edition><date>2007</date></edition><lb/><author><surname>Bailleux</surname>
+                <forename full="init">G.</forename></author>
+              <c type="hyphen">-</c>
+              <title level="u" type="main">Mainvilliers “ Le Vallier ” Z.A. (extension ouest).
+                Eure-et-Loir – Centre</title><c type="point">.</c>
+              <title level="u" type="sub">Rapport de diagnostic</title><c type="point">.</c>
+              <distributor><abbr type="acronym">INRAP CIF</abbr></distributor><c type="point">.</c>
+              <pubPlace>Pantin</pubPlace><c type="comma">,</c>
+              <biblScope type="vol">1</biblScope> <abbr type="contraction">vol.</abbr>
+              <extent>98</extent> <abbr type="contraction">p.</abbr></bibl>
+<bibl><author><surname>GESCHIERE</surname>, <forename>Peter</forename></author> et
+                  <author><surname>KONINGS</surname>, <forename>Piet</forename></author>,
+                  <edition><date>1993</date></edition>, <hi rend="italic"><title level="m">Itinéraires
+                  d’accumulation au Cameroun</title></hi><c type="comma">,</c>
+              <publisher>ASC-Karthala</publisher><c type="point">.</c></bibl>
+<bibl><author xml:id="WL"><surname>Wittgenstein</surname>, <forename full="init"
+                  >L.</forename></author><c type="comma">,</c>
+              <hi rend="italic"><title level="m">Le cahier bleu et le cahier brun</title></hi><c
+                type="comma">,</c>
+              <abbr type="contraction">tr. fr.</abbr>
+              <editor role="translator"><forename full="init">M.</forename> <surname>Goldberg</surname></editor> et <editor role="translator"><forename full="init">J.</forename> <surname>Sackur</surname></editor><c type="comma">,</c>
+              <pubPlace>Paris</pubPlace><c type="comma">,</c>
+              <publisher>Gallimard</publisher><c>,</c>
+              <edition><date>1996</date></edition><c type="point">.</c></bibl>
+<bibl type="article"><author><surname>Fluzin</surname>, <forename full="init"
+                  >P.</forename></author><c type="comma">,</c>
+              <edition><date>1983</date></edition><c type="point">.</c>
+              <title level="a">Notions élémentaires de sidérurgie</title><c type="comma">,</c>
+              <hi rend="italic">in</hi>
+              <relatedItem type="in">
+                <bibl type="journal"><author><surname>Échard</surname>, <forename full="init"
+                      >N.</forename></author><c type="comma">,</c>
+                  <title level="m"><hi rend="italic">Métallurgies
+                        africaines</hi><hi rend="italic"> <c type="colon">:</c>
+                      nouvelles contributions</hi></title><c type="comma"
+                    >,</c>
+                  <pubPlace>Paris</pubPlace><c type="comma">,</c>
+                  <edition><date>1983</date></edition><c type="comma">,</c>
+                  <abbr type="contraction">p.</abbr> <biblScope type="pp">14-44</biblScope><c
+                    type="comma">,</c>
+                  <title level="j">Mémoires de la société des Africanistes</title>
+                  <biblScope type="issue">9</biblScope><c type="point">.</c></bibl>
+              </relatedItem></bibl>
+<bibl><author><orgName>Ministère Education Nationale Enseignement Supérieur Recherche <c
+                    type="parenthesis_left">(</c><abbr type="acronym">MENESR</abbr><c
+                    type="parenthesis_right">)</c></orgName></author><c type="comma">,</c>
+              <edition><date>2006</date></edition><c type="comma">,</c>
+              <title level="a">Note d’information n° 06.20</title><c type="point">.</c>
+              <pubPlace>Paris</pubPlace> <c type="colon">:</c>
+              <distributor>DEPP</distributor><c type="point">.</c> </bibl>
+<bibl><author><surname>Cislaru</surname>
+                <forename full="init">G.</forename></author><c type="comma">,</c>
+              <author><surname>Pugnière</surname>
+                <forename full="init">F.</forename></author> et <author><surname>Sitri</surname>
+                <forename full="init">F.</forename></author> (<abbr type="contraction">dir.</abbr>) <c
+                type="parenthesis_left">(</c><edition><date>2008</date></edition><c
+                type="parenthesis_right">)</c><c type="point">.</c>
+              <title level="j">Les Carnets du Cediscor</title>
+              <biblScope type="issue">10</biblScope>
+              <c type="parenthesis_left">(</c><c type="guillemot_left">«</c> <title level="j"
+                type="main">Analyse de discours et demande sociale : le cas des écrits de
+                signalement</title> <c type="guillemot_right">»</c><c type="parenthesis_right">)</c><c
+                type="point">.</c>
+              <pubPlace>Paris</pubPlace> <c type="colon">:</c>
+              <publisher>PSN</publisher><c type="point">.</c>
+            </bibl>
+<bibl><author><surname>RUF</surname>
+                <forename full="init">F.</forename></author><c type="comma">,</c>
+              <edition><date>1987</date></edition><c type="comma">,</c>
+              <c type="guillemot_left">«</c> <title level="a">Éléments pour une théorie sur
+                l'agriculture des régions tropicales humides. De la forêt, rente différentielle au
+                cacaoyer, capital travail</title> <c type="guillemot_right">»</c><c type="comma">,</c>
+              <hi rend="italic"><title level="j">L’Agronomie Tropicale</title></hi><c type="comma"
+                >,</c>
+              <biblScope type="vol">42</biblScope><c type="parenthesis_left">(</c><biblScope
+                type="issue">3</biblScope><c type="parenthesis_right">)</c><c type="comma">,</c>
+              <biblScope type="pp">218-232</biblScope><c type="point">.</c></bibl>
+<bibl type="article"><author><hi font-variant="small-caps"><surname>Manuli</surname>
+                </hi><forename>Paola</forename></author>
+              <c type="parenthesis_left">(</c><edition><date>1983</date></edition><c
+                type="parenthesis_right">)</c><c type="comma">,</c>
+              <c type="guillemot_left">«</c> <title level="a"><emph>Donne mascoline</emph>, femmine
+                sterili, vergini perpetue : la ginecologia greca tra Ippocrate e Sorano</title> <c
+                type="guillemot_right">»</c> dans <relatedItem type="in">
+                <bibl type="book"><author><hi font-variant="small-caps"
+                      ><surname>Campese</surname></hi>
+                    <forename full="init">Silvia</forename></author><c
+                      type="comma">,</c>
+                    <author><hi font-variant="small-caps"><surname>Manuli</surname></hi><forename>Paola</forename></author>
+                  <author><hi font-variant="small-caps">&amp; <surname>Sissa</surname></hi>
+                  <forename>Giulia</forename></author><c type="comma">,</c>
+                  <title level="m"><hi rend="italic">Madremateria . </hi><hi rend="italic">Sociología
+                      e biología Della donna greca</hi></title><c type="comma">,</c>
+                  <pubPlace>Turin</pubPlace><c type="comma">,</c>
+                  <publisher>Boringhieri</publisher><c type="point">.</c></bibl>
+              </relatedItem></bibl>
+<bibl><author><surname>Dupuy</surname> <forename
+                  full="init">J.-P.</forename></author> et <author><surname>Grinbaum</surname> <forename full="init"
+                  >A.</forename></author>
+              <c type="parenthesis_left">(</c><edition><date>2005</date></edition><c
+                type="parenthesis_right">)</c><c type="comma">,</c>
+              <c type="guillemot_left">«</c> <title level="a">Living with Uncertainty : Toward the
+                Ongoing Normative Assessment of Nanotechnology</title> <c type="guillemot_right"
+                >»</c><c type="comma">,</c>
+              <hi rend="italic"><title level="j">Techné : Research in Philosophy and
+                  Technology</title></hi><c type="comma">,</c>
+              <biblScope type="issue">8</biblScope>, <abbr type="contraction">n°</abbr> <biblScope
+                type="issue">2</biblScope><c type="point">.</c>
+              <edition>[en ligne]</edition></bibl>
+<bibl><author><surname>BARTHES</surname>
+                <forename full="yes">Angela</forename></author><c type="comma">,</c>
+              <edition><date>2004</date></edition>
+              <c type="hyphen">–</c>
+              <title level="a">La montagne en tant que ressource territoriale : exploration
+                conceptuelle</title><c type="point">.</c>
+              <hi rend="italic"><title level="j">Montagnes méditerranéennes</title><c type="comma"
+                  >,</c></hi>
+              <abbr type="contraction">n°</abbr> <biblScope type="issue">20</biblScope><c type="comma"
+                >,</c>
+              <date when="2004-12">décembre</date><c type="comma">,</c>
+              <extent>6</extent>
+              <abbr type="contraction">p.</abbr></bibl>
+<bibl><author><surname>L<hi font-variant="small-caps">iu</hi></surname>
+                <forename>Xin</forename></author><c type="comma">,</c>
+              <edition><date>1981</date></edition><c type="point">.</c>
+              <hi rend="italic"><title level="m">The Otherness of Self : A Genealogy of the Self in
+                  Contemporary China</title></hi><c type="point">.</c>
+              <pubPlace>Ann Arbor</pubPlace> <c type="colon">:</c>
+              <publisher>The University of Michigan Press</publisher><c type="point">.</c></bibl>
+<bibl><author><surname>SCHWARTZ</surname>
+                <forename full="init">A.</forename></author><c type="comma">,</c>
+              <edition><date>1979</date></edition><c type="comma">,</c>
+              <c type="guillemot_left">«</c> <title level="a">Colonisation agricole spontanée et
+                émergence de nouveaux milieux sociaux dans le sud-ouest ivoirien : l’exemple du canton
+                bakwé dans la sous-préfecture de Soubré</title> <c type="guillemot_right">»</c><c
+                type="comma">,</c>
+              <hi rend="italic"><title level="j">Cahiers ORSTOM</title></hi><c type="comma">,</c>
+              <biblScope type="vol">XVI</biblScope>
+              <c type="parenthesis_left">(</c><biblScope type="issue">1-2</biblScope><c
+                type="parenthesis_right">)</c><c type="comma">,</c>
+              <biblScope type="pp">83-101</biblScope><c type="point">.</c></bibl>
+<bibl type="article"><author><surname>A<hi font-variant="small-caps">llard</hi></surname></author>
+              <edition><date>2004</date></edition><lb/><author><surname>Allard</surname>
+                <forename full="init">P.</forename></author>
+              <hi rend="italic"><abbr type="contraction">et al</abbr></hi>. <c type="hyphen">-</c>
+              <title level="a">Fonction des outillages lithiques dans le Bassin parisien au
+                Néolithique</title><c type="comma">,</c>
+              <hi rend="italic">in </hi><c type="colon">:</c><relatedItem type="in">
+                <bibl type="book">
+                  <author><forename full="init">C.</forename>
+                    <surname>Constantin</surname></author> et <author><forename full="init"
+                      >P.</forename>
+                    <surname>Bodu</surname></author>
+                  <c type="parenthesis_left">(</c><abbr type="contraction">dir.</abbr><c
+                    type="parenthesis_right">)</c><c type="comma">,</c>
+                  <meeting><title level="m"><hi rend="italic">Approches fonctionnelles en
+                      </hi><pb/></title><hi rend="italic"><title>Préhistoire</title><c type="comma"
+                        >,</c> Actes du XXV</hi><hi rend="sup">e</hi><hi rend="italic"> congrès
+                      préhistorique de France, <settlement type="town">Nanterre</settlement>, <date
+                        notBefore="2000-11-24" notAfter="2000-11-26">24-26 novembre
+                    2000</date></hi></meeting><c type="comma">,</c>
+                  <distributor>Société Préhistorique Française</distributor> <c type="colon"
+                    >:</c> <biblScope type="pp">81-192</biblScope></bibl>
+              </relatedItem><c type="point">.</c></bibl>
+<bibl><author><surname>Haas</surname>, <forename full="init">H.</forename>
+                <nameLink>de</nameLink></author><c type="comma">,</c>
+              <hi rend="italic"><title level="m">Engaging Diasporas : How Governments and Development
+                  Agencies Can Support Involvement in the Development of Origin
+                Countries</title></hi><c type="comma">,</c>
+              <pubPlace>Oxford</pubPlace><c type="comma">,</c>
+              <publisher>International Migration Institute</publisher><c type="comma">,</c>
+              <distributor>University of Oxford</distributor><c type="comma">,</c>
+              <edition><date>2006</date></edition><c type="point">.</c></bibl>
+</listBibl>
+</TEI>
