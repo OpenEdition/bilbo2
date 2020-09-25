@@ -5,16 +5,28 @@ Rewritten in python3 from Scratch, it comes from BILBO. Compare to the old one, 
 
 
 
-## Prerequisites
-
-Bilbo2 was tested on Linux/Debian distribution (Debian stretch release). It is running on python 3.5. Some dependencies are required. See [requirements.txt](https://github.com/OpenEdition/bilbo2/requirements.txt).
 
 
 ## Installation
 
-For more details on installation see [INSTALL.txt](https://github.com/OpenEdition/bilbo2/INSTALL.txt)
-Using setup.py:
+### Dependencies
+
+Bilbo2 requires:
+
+* **python3.5**
+* **gcc** and **g++** (used by LIBSVM compilation)
+* **git** >= 1.7.10 (needed by github)
+* **pip** and **setuptools** , necessary for launch python installation
+* **libxml2-dev**
+
+User installation
+
+
+```console
 python3 setup.py install --user
+```
+
+The documentation includes more detailed [Installation Instructions](https://readthedocs.org/projects/bilbo2-openedition/start/installation.html)
 
 
 ## Usage
