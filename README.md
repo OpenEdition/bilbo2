@@ -31,7 +31,6 @@ The documentation includes more detailed [Installation Instructions](https://bil
 
 ## Usage
 
-See [docs](./docs/build/htmkl/index.html) for complete usage.
 
 For an overview and a test of cli usage, from a terminal, run:
 
@@ -42,6 +41,9 @@ cd bilbo2
 
 You can add -v argument to see output. 
 
+See [docs](https://bilbo2-openedition.readthedocs.io/en/latest/essential/toolkit.html) for complete cli usage.
+
+See [bilbo in a shell](https://bilbo2-openedition.readthedocs.io/en/latest/essential/shell.html) for python interface usage
 
 ## Author and contributors
 (C)Copyright 2019 OpenEdition by [Mathieu Orban](mailto:mathieu.orban@openedition.org)
