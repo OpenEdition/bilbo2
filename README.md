@@ -36,7 +36,7 @@ For an overview and a test of cli usage, from a terminal, run:
 
 ```
 cd bilbo2
-/bin/bash bilbo/tests/bilbo_demo.sh
+/bin/bash bilbo/tests/bilbo_demo.sh -v
 ```
 
 You can add -v argument to see output. 
