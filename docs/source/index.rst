@@ -6,7 +6,7 @@
 Welcome to bilbo2's documentation!
 ===================================
 
-`BILBO V2 <https://github.com/OpenEdition/bilbo>`_ is an open source software for automatic annotation of bibliographic reference. It provides the segmentation and tagging of input string.
+`BILBO2 <https://github.com/OpenEdition/bilbo2>`_ is an open source software for automatic annotation of bibliographic reference. It provides the segmentation and tagging of input string.
 Its main purpose is to provide both a complete development and research space for the improvement of bibliographic reference detections and to be a solid tool capable of being used in production like `OpenEdition <https://www.openedition.org/>`_ for example.
 What you will find here is the user documentation, the technical documentation and the developper documentation for the Bilbo software.
 
