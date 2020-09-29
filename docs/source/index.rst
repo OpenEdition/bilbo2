@@ -36,7 +36,6 @@ This documentation is organized into a few main sections :
   start/installation.md
   start/usage.md
 
-
 .. toctree::
   :maxdepth: 2
   :name: essential
@@ -44,10 +43,16 @@ This documentation is organized into a few main sections :
   
   essential/I-O.md
   essential/pipelines.md
-  essential/usage.md
-  essential/toolkit.md
-  essential/shell.md
-  essential/annotator.md
+  essential/chaining.md
+
+.. toctree::
+  :maxdepth: 2
+  :name: usage
+  :caption: Usage
+  
+  usage/toolkit.md
+  usage/shell.md
+  usage/annotator.md
 
 .. toctree::
   :maxdepth: 2

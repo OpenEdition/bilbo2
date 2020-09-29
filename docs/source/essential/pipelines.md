@@ -6,9 +6,16 @@ information on each section or at the level of a token.
 
 
 
-## Importer (Mandatory and First step)
+## Importer
 
+<aside class="warning">
+   WARNING!
+   This is the first and **mandatory** step for any pipelines series.
+</aside>
+
+Document is imported: lxlm library parse the whole document. 
 Each document is segmented according to one section, the data structure is constructed at the level of section.
+
 
 ## Module available
 
@@ -16,8 +23,8 @@ All this module can be found in components directory. Each class will inherit fr
 
 ### Shape Data: extract XML value and tokenizer
 
-Shaper section (is to handle xml data and tokenize). Tokenizer is written for french and english. structure is constructed at the elevel of token.
-This module is certainly the first in the pipelines series.
+Shaper section is dedicated to handle xml data and tokenize. Tokenizer is written for french and english. structure is constructed at the level of token.
+This module is certainly and should be the first in the pipelines series.
 For see CLI API functionalities (CLI):
 
 ```
@@ -31,7 +38,7 @@ For specify [shape component options](../configuration/options.html#shaper)
 ### Features
 Features could be extract from list or dictionnaries files (external features). 
 Features could be extract from the local specifity of a word.
-Features could be extract from  the specificity of section or position of a token(global features).  List of word could be simple or multiple. 
+Features could be extract from  the specificity of section or position of a token (global features).  List of word could be simple or multiple. 
 For see CLI API functionalities (CLI):
 
 ```

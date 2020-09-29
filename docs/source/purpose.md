@@ -18,9 +18,12 @@ Implemented by the tag `<p>` (TEI-XML Document).
 Algoritym complexity to extract bibliography  is increasing at each level (`<bibl>`,`<note>`,`<p>`).
 Currently, the first level could be considered as efficient. The others not.  
 Bilbo2 is considered to be dedicated to research.
+
 It has been thought to be a tools for implement easily new machine learning algorithms at any level of bibliography.
-Everything has been done so that we can easily add new algorithms to existing codes without affecting what can be deployed in production.  
+Everything has been done so that we can easily add new algorithms to existing codes without affecting what can be deployed in production.
+
 Data structure of a document is constructed to manipulate a Document at any level. A level (that we called a section) is a tag. The scope of processing algorithm will be the section choosen. Then all sections corresponding to this tag will be processed.
+
 Each instance bilbo is specialized in a specific tag. To handle different type of tag, you can pass and process each time the xml document.
 
 

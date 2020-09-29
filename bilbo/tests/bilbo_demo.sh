@@ -61,8 +61,8 @@ run_cmd "python3 -m bilbo.components.svm -cf bilbo/config/pipeline_note.cfg -i b
 check_test
 
 
-echo -ne  " - LABELING (full pipeline) on bibl xml \n\t - Command : python3 -m bilbo.bilbo --action tag -c bilbo/config/pipeline_bibl.cfg -i resources/corpus/bibl/test_bibl.xml -t bibl -o /tmp/doc_bibl_annotated.xml -vvvv \n"
-run_cmd "python3 -m bilbo.bilbo --action tag -c bilbo/config/pipeline_bibl.cfg -i resources/corpus/bibl/test_bibl.xml -t bibl -o /tmp/doc_bibl_annotated.xml -vvvv"
+echo -ne  " - LABELING (full pipeline) on bibl xml \n\t - Command : python3 -m bilbo.bilbo --action tag -i resources/corpus/bibl/test_bibl.xml -o /tmp/doc_bibl_annotated.xml -vvvv \n"
+run_cmd "python3 -m bilbo.bilbo --action tag -i resources/corpus/bibl/test_bibl.xml -o /tmp/doc_bibl_annotated.xml -vvvv"
 check_test
 
 
