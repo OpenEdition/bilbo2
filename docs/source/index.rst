@@ -16,6 +16,7 @@ This documentation is organized into a few main sections :
 * :ref:`purpose`
 * :ref:`user-docs`
 * :ref:`essential`
+* :ref:`usage`
 * :ref:`configuration`
 * :ref:`developer`
 
