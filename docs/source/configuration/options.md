@@ -28,7 +28,7 @@ verbose=True
 
 
 
-## SHAPER ###
+## SHAPER ##
 
 This section is marked by:
 * `[shaper]`
@@ -59,7 +59,7 @@ verbose=True
 
 
 
-## FEATURES ###
+## FEATURES ##
 
 This section is marked by:
 * `[features]`
@@ -88,7 +88,6 @@ This is set to italic by default.
 ### output ###
 Path output, it is handling when you use feature component. Output is fitted to CRF++ format data.
 
-## ===features === ##
 
 Example:
 ```ini
@@ -108,7 +107,7 @@ listFeaturesExternes = ('place', 'resources/external/place_list.txt', 'multi'),
 ```
 
 
-## CRF ###
+## CRF ##
 
 This section is marked by:
 * `[crf]`
@@ -119,16 +118,14 @@ Name of libraries used, in some cases you can change the crf libraries (for wapi
 
 ### algoCrf ###
 
-Default value is set to lbfgs (for https://en.wikipedia.org/wiki/Limited-memory_BFGS)
+Default value is set to [lbfgs](for https://en.wikipedia.org/wiki/Limited-memory_BFGS)
 algorithm : {‘lbfgs’, ‘l2sgd’, ‘ap’, ‘pa’, ‘arow’}
 
 ### optionCrf ###
 
-Many option are avalaible . see manaul : http://www.chokkan.org/software/crfsuite/manual.html#idp8853531472
+Many option are avalaible . see [crfsuite manual](http://www.chokkan.org/software/crfsuite/manual.html#idp8853531472)
 
-Most ilmportant are c1 for a L1 regularisation (in this case algoritm is switch to orthant method
-c2 regression ridge.
-and mas_iterations
+Most important are c1 for a L1 regularisation (in this case algoritm is switch to orthant method), c2 regression ridge and and max_iterations
 
 epsilon : The epsilon parameter that determines the condition of convergence. value set by default at  1e-5
 
