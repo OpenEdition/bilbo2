@@ -41,7 +41,7 @@ cd bilbo2
 
 You can add -v argument to see output. 
 
-See [docs](https://bilbo2-openedition.readthedocs.io/en/latest/essential/toolkit.html) for complete cli usage.
+See [docs](https://bilbo2-openedition.readthedocs.io/en/latest/usage/toolkit.html) for complete cli usage.
 
 See [examples](https://github.com/OpenEdition/bilbo2/blob/master/examples/examples.ipynb) for python interface usage
 
