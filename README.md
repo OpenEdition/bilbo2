@@ -11,7 +11,7 @@ Rewritten in python3 from Scratch, it comes from BILBO. Compare to the old one, 
 
 ### Dependencies
 
-Bilbo2 requires:
+Bilbo2 requires some [dependencies](https://bilbo2-openedition.readthedocs.io/en/latest/start/requirements.html):
 
 * **python3.5**
 * **gcc** and **g++** (used by LIBSVM compilation)
@@ -47,7 +47,7 @@ See [examples](https://github.com/OpenEdition/bilbo2/blob/master/examples/exampl
 
 ## Author and contributors
 (C)Copyright 2019 OpenEdition by [Mathieu Orban](mailto:mathieu.orban@openedition.org)
-Main contributors are **Yann Weber**, **Jérémy Trione**. Special acknowledgements for Yoann Dupont(https://github.com/YoannDupont)
+Main contributors are **Yann Weber**, **Jérémy Trione**. Special acknowledgements for Yoann Dupont (https://github.com/YoannDupont)
 
 
 ## License
