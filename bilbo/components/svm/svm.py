@@ -46,13 +46,13 @@ class Svm(Estimator):
         self.vocab_file = self.parser.getArgs(self.cfg_file, "vocab")
 
     def _load_vocab(self):
-        if (Svm._auto_config and  self.vocab_file):
-            file_pk = self._auto_load('binary', self.vocab_file)
+        pk_file = self.vocab_file.replace(".txt", ".pkl")
+        if Svm._auto_config:
+            file_pk = self._auto_load('binary', pk_file)
             self._vocab = pickle.load(file_pk)
             file_pk.close()
-        if (Svm._auto_config is False and self.vocab_file is not None):
+        else:
             try:
-                pk_file = self.vocab_file.replace(".txt", ".pkl")
                 file_pk = open(pk_file, 'rb')
                 self._vocab = pickle.load(file_pk)
                 file_pk.close()
