@@ -1,6 +1,7 @@
 """ External feature Class """
-
+import os
 from bilbo.utils.dictionaries import compile_multiword
+from bilbo.utils.loader import binary_resource_stream, text_resource_stream
 try:
     import cPickle as pickle
 except ImportError:
@@ -13,6 +14,7 @@ class ExternalFeature:
     ExternalFeature CLass
     generate the feature from external ressources
     """
+    _auto_config = False 
     @classmethod
     def factory(cls, typeft, name, list_name):
         """
@@ -31,6 +33,15 @@ class ExternalFeature:
                 return DictionnaryFeature(name, list_name)
         return 'WRONG TYPE'
 
+    def _auto_load(self, mode, path):
+        fname = os.path.basename(path)
+        resources = 'resources.external'
+        if mode == 'binary':
+            return binary_resource_stream(fname, resources)
+        else:
+            return text_resource_stream(fname, resources)
+
+
 
 class DictionnaryFeature(ExternalFeature):
     """
@@ -41,9 +52,13 @@ class DictionnaryFeature(ExternalFeature):
         self._path = filename
         self._appendice = '$'
         self._list = None
-        if self._path is not None:
+        pk_file = self._path.replace(".txt", ".pkl")
+        if DictionnaryFeature._auto_config:
+            file_pk = self._auto_load('binary', pk_file)
+            self._value = pickle.load(file_pk)
+            file_pk.close()
+        else:
             try:
-                pk_file = self._path.replace(".txt", ".pkl")
                 file_pk = open(pk_file, 'rb')
                 self._value = pickle.load(file_pk)
                 file_pk.close()
@@ -116,9 +131,13 @@ class ListFeature(ExternalFeature):
     def __init__(self, name, list_name):
         self._name = name
         self._extern_token = set()
-        with open(list_name, 'r') as fds:
-            for line in fds:
+        if ListFeature._auto_config: 
+            for line in self._auto_load('text', list_name):
                 self._extern_token.add(line.strip().lower())
+        else:    
+            with open(list_name, 'r') as fds:
+                for line in fds:
+                    self._extern_token.add(line.strip().lower())
 
     def __call__(self, section, token_id):
         if section.token_str_lst[token_id][0].lower() in self._extern_token:

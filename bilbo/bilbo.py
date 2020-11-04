@@ -9,19 +9,34 @@ from bilbo.generateXml import GenerateXml
 from bilbo.importer import Importer
 from bilbo.eval import Evaluation
 from bilbo.utils.bilbo_logger import get_logger
+from bilbo.utils.loader import binary_resource_stream, text_resource_stream
 
 class Bilbo:
     """ Bilbo class """
-    def __init__(self, document, cfg_file):
+    _auto_config = False
+
+    def __init__(self, document, cfg_file=None):
         self.document = document
-        self.config = self._get_config_parser(cfg_file)
+        self.cfg = Bilbo._auto_config or cfg_file  
+        self.config = self._get_config_parser(self.cfg)
         self.pipeline = self.get_pipeline(self.config)
         #TODO make a logger by default
         #logger = get_logger(verbosity=4)
 
-    def _get_config_parser(self, cfg_file):
+    @staticmethod
+    def load(tag_level):
+        config_name = ''.join(('config/pipeline_', tag_level, '.cfg'))
+        try:
+            Bilbo._auto_config = text_resource_stream(config_name, __name__)
+        except:
+            print('Unknown autoload name of tag')
+
+    def _get_config_parser(self, cfg):
         config =ConfigParser()
-        config.read(cfg_file)
+        if isinstance(cfg, str):
+            config.read(cfg)
+        else:
+            config.read_file(cfg)
         return config
 
     def get_pipeline(self, cfg):
@@ -94,6 +109,7 @@ class Bilbo:
         :returns: document with features
         """
         from bilbo.components.features.features import FeatureHandler
+        FeatureHandler._auto_config = Bilbo._auto_config
         feat = FeatureHandler(self.config, type_config='Dict')
         feat.loadFonctionsFeatures()
         document = feat.transform(document)
@@ -106,6 +122,7 @@ class Bilbo:
         :param document: Shaped and featured document
         """
         from bilbo.components.crf.crf import Crf
+        Crf._auto_config = Bilbo._auto_config
         crf = Crf(self.config, type_config='Dict')
         return crf.transform(document, mode)
             
@@ -154,11 +171,11 @@ class Bilbo:
         :param document: shaped and features document
         """
         from bilbo.components.svm.svm import Svm
+        Svm._auto_config = Bilbo._auto_config
         svm = Svm(self.config, type_config='Dict')
         svm.transform(document, mode)
 
-if __name__ == "__main__":
-    ## Args parser
+if __name__== "__main__":
     parser = Parser.get_parser(name='python3 -m bilbo.bilbo')
     parser.add_argument('--listcomponents', '-L', action="store_const",\
             default=False, const=True)
@@ -193,5 +210,5 @@ if __name__ == "__main__":
     logger.debug('Instantiate Bilbo')
 
     bilbo = Bilbo(doc, args.cfgfile)
-    
+
     bilbo.run_pipeline(args.action, output, format_)

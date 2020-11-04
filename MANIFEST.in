@@ -1,4 +1,7 @@
-include *.md *.txt
+include *.md
 include docs/*.txt
 include bilbo/stylesheets/*.xsl
-
+recursive-include bilbo/config *.cfg
+recursive-include resources/external *.pkl *.txt
+recursive-include resources/models/crf *
+recursive-include resources/models/svm *

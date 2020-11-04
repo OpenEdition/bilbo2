@@ -16,9 +16,11 @@ class FeatureHandler(Component):
     Feature handler
     """
     _parser_name = 'features' 
+    _auto_config = False 
 
     def __init__(self, cfg_file, type_config='ini'):
         super(FeatureHandler, self).__init__(cfg_file, type_config)
+        ExternalFeature._auto_config = FeatureHandler._auto_config 
         self._orderedFeatures()
 
     def _get_opts(self):

@@ -37,3 +37,4 @@ if __name__ == "__main__":
     feat.loadFonctionsFeatures()
     doc = feat.transform(doc)
     feat.save_features(doc)
+    feat.print_features(doc)

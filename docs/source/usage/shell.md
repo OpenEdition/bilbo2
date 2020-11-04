@@ -5,6 +5,7 @@ from bilbo.components.shape_data.shape_data import ShapeSection
 from bilbo.components.features.features import FeatureHandler
 from bilbo.components.crf.crf import Crf
 from bilbo.bilbo import Bilbo
+
 ```
 
 ## Bilbo in a shell

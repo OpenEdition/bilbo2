@@ -12,6 +12,7 @@ from bilbo.utils.dictionaries import generatePickle
 from bilbo.components.features.xmlfeatures import XmlFeature
 import collections
 import pickle
+import pkg_resources
 
 import logging
 logger = logging.getLogger(__name__)
@@ -23,8 +24,7 @@ except ImportError:
     path = os.path.join(os.getcwd(), 'bilbo/libs/libsvm-3.23/python')
     sys.path.append(path)
     try:
-        import svmutil
-        import svm
+        from libsvm import svmutil, svm
     except ImportError as e:
         print('\n\nYou should run "make" !\n\n', file=sys.stderr)
 
@@ -34,6 +34,7 @@ class Svm(Estimator):
     SVM class
     """
     _parser_name = 'svm'
+    _auto_config = False 
 
     def __init__(self, cfg_file, type_config='ini'):
         super(Svm, self).__init__(cfg_file, type_config)
@@ -45,7 +46,11 @@ class Svm(Estimator):
         self.vocab_file = self.parser.getArgs(self.cfg_file, "vocab")
 
     def _load_vocab(self):
-        if self.vocab_file is not None:
+        if (Svm._auto_config and  self.vocab_file):
+            file_pk = self._auto_load('binary', self.vocab_file)
+            self._vocab = pickle.load(file_pk)
+            file_pk.close()
+        if (Svm._auto_config is False and self.vocab_file is not None):
             try:
                 pk_file = self.vocab_file.replace(".txt", ".pkl")
                 file_pk = open(pk_file, 'rb')
@@ -120,6 +125,7 @@ class Svm(Estimator):
             dict_feat['classe'] = 1 if "</bibl>" in section.str_value else -1
             dict_feat.update(self.word_count(section))
             indice = len(self._vocab)
+            print(indice)
             d = collections.OrderedDict()
             d = {'initial': 'NOINITIAL', 'numbersMixed': 'NONUMBER'}
             for k, v in d.items(): 
@@ -168,8 +174,16 @@ class Svm(Estimator):
         """
         logger.info('Start to predict')         
         y,x =  self.fit(document)
-        m = svmutil.svm_load_model(self.model_file)
+
+        if Svm._auto_config:
+            file_name = self._auto_load('file', self.model_file)
+            m = svmutil.svm_load_model(file_name)
+            pkg_resources.cleanup_resources()
+        else : 
+            m = svmutil.svm_load_model(self.model_file)
+        print(self.model_file)
         y_pred, p_acc, p_val = svmutil.svm_predict(y, x, m, "-q")
+        print(self.model_file)
         return y_pred
 
     def evaluate(self, document):

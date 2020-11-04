@@ -7,6 +7,7 @@ import pycrfsuite
 import bilbo.utils.crf_datas as crf_datas
 from bilbo.components.component import Component, Estimator, Extractor
 from bilbo.eval import Evaluation
+from bilbo.utils.loader import binary_resource_stream, text_resource_stream
 
 import logging
 logger = logging.getLogger(__name__)
@@ -17,6 +18,7 @@ class Crf(Estimator):
     CRF class
     """
     _parser_name = 'crf' 
+    _auto_config = False 
 
     def __init__(self, cfg_file, type_config='ini'):
         super(Crf, self).__init__(cfg_file, type_config)
@@ -34,8 +36,13 @@ class Crf(Estimator):
             data_fd = document
         else:
             data_fd = self.get_crf_data(document)
-        with open(self.patterns_file, 'r') as pattern_fd:
+        if Crf._auto_config:
+            pattern_fd = self._auto_load('text', self.patterns_file)
             patterns = crf_datas.fd2patterns(pattern_fd)
+            pattern_fd.close()
+        else:            
+            with open(self.patterns_file, 'r') as pattern_fd:
+                patterns = crf_datas.fd2patterns(pattern_fd)
         xyseq = crf_datas.extract_y(crf_datas.fd2sections(data_fd, ' '))
         dats = crf_datas.apply_patterns(xyseq, patterns)
         return dats, data_fd 
@@ -118,15 +125,22 @@ class Crf(Estimator):
         """
         Instanciate a tagger for each section in order to benchmark
         model loading and eventually detect memory leaks
+        In reality not tagger is not loaded every time
 
         :param dats: BenchMarkDatas child class instance
         """
         all_result = []
-        for i, (xseq, _) in enumerate(dats):
-            tagger = pycrfsuite.Tagger()
+        tagger = pycrfsuite.Tagger()
+        if Crf._auto_config: 
+            file_pk = self._auto_load('binary', self.model_file)
+            tagger.open_inmemory(file_pk.read())
+            file_pk.close()
+        else:
             tagger.open(self.model_file)
+        for i, (xseq, _) in enumerate(dats):
             result = tagger.tag(xseq)
             all_result.append(result)
+        tagger.close()
         return all_result
 
     def evaluate(self, document):

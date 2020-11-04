@@ -1,6 +1,8 @@
 "Component"
 
 from bilbo.libs.opts import BilboParser 
+from bilbo.utils.loader import binary_resource_stream, text_resource_stream, filename_resource
+import os
 
 class Component:
     """Component abstract Class"""
@@ -26,6 +28,16 @@ class Component:
     def transform(self, document):
         pass
 
+    def _auto_load(cls, mode, path):
+        fname = os.path.basename(path)
+        resources = ''.join(('resources.models.', cls.get_parser_name()))
+        if mode == 'binary':
+            return binary_resource_stream(fname, resources)
+        elif mode == 'text':
+            return text_resource_stream(fname, resources)
+        else:
+            return filename_resource(fname, resources)
+            
 
 class Estimator(Component):
     """Estimator Extract Class"""
