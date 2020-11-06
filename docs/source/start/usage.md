@@ -64,4 +64,22 @@ bilb.annotate("path_to_output.xml", format_=None)
 ```
 
 
+### Autoloaded Models ###
+
+
+Two models and prexisted external list already exists and can be loaded as a data package.
+You do not need to give the config file path. You just have to load 'bibl' or 'note' with class method load(bibl/note):
+
+
+
+```
+from bilbo.importer import Importer
+from bilbo.bilbo import Bilbo
+
+importer = Importer("path_to_your_xml_file")
+doc = importer.parse_xml('note)')
+Bilbo.load('note')
+bilbo = Bilbo(doc)
+bilb.annotate("path_to_output.xml", format_=None)
+```
 

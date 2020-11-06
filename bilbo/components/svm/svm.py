@@ -125,7 +125,6 @@ class Svm(Estimator):
             dict_feat['classe'] = 1 if "</bibl>" in section.str_value else -1
             dict_feat.update(self.word_count(section))
             indice = len(self._vocab)
-            print(indice)
             d = collections.OrderedDict()
             d = {'initial': 'NOINITIAL', 'numbersMixed': 'NONUMBER'}
             for k, v in d.items(): 
@@ -140,7 +139,6 @@ class Svm(Estimator):
         
     def write_data_svm(self, data):
         data_svm = open(self.output_file, "w")       
-        #data_svm = open("bilbo/resources/models/note/data_SVM.txt", "w")
         for d in data:
             str_data = ''
             for k, v in d.items():
@@ -181,9 +179,7 @@ class Svm(Estimator):
             pkg_resources.cleanup_resources()
         else : 
             m = svmutil.svm_load_model(self.model_file)
-        print(self.model_file)
         y_pred, p_acc, p_val = svmutil.svm_predict(y, x, m, "-q")
-        print(self.model_file)
         return y_pred
 
     def evaluate(self, document):
