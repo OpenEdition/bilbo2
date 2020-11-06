@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'bilbo2',
-    version = '1.0',
+    version = '1.1',
     packages = find_packages(),
     author = "OpenEdition Lab",
     author_email = "mathieu.orban@openedition.org",
