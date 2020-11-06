@@ -1,37 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 from setuptools import setup, find_packages
-import os.path
-import subprocess
-import tarfile
-import pkg_resources
-import sys
-cwd = os.path.abspath(".")
-libs_dir = "./bilbo/libs/"
-extensions = ".tar.gz"
-
-
-tar_file = [f for f in os.listdir(libs_dir) if f.endswith(extensions)][0]
-
-libsvm_tar = os.path.join(libs_dir, tar_file)
-libsvm_dir = os.path.join(libs_dir, tar_file.replace(extensions, ''))
-
-
-def compile_binary(path, name):
-    os.chdir(path)
-    cmd = ["make"]
-    exit_status = subprocess.call(cmd, shell=True)
-    print('{} compilation done\n'.format(name) if (exit_status==0) else '{} compilation Failed\n'.format(name))
-    return exit_status
-
-if not os.path.isdir(libsvm_dir):
-    with tarfile.open(libsvm_tar, "r:gz") as tar:
-        tar.extractall(os.path.dirname(libs_dir))
-if not (os.path.exists(os.path.join(libsvm_dir, "svm.o"))):
-    if (compile_binary(libsvm_dir, 'LIBSVM C++') == 0):
-        compile_binary("./python/", 'LIBSM PYTHON')
-os.chdir(cwd)
 
 setup(
     name = 'bilbo2',
