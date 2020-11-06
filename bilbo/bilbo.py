@@ -9,7 +9,7 @@ from bilbo.generateXml import GenerateXml
 from bilbo.importer import Importer
 from bilbo.eval import Evaluation
 from bilbo.utils.bilbo_logger import get_logger
-from bilbo.utils.loader import binary_resource_stream, text_resource_stream
+from bilbo.utils.loader import binary_resource_stream, text_resource_stream, RessourceError
 
 class Bilbo:
     """ Bilbo class """
@@ -17,7 +17,7 @@ class Bilbo:
 
     def __init__(self, document, cfg_file=None):
         self.document = document
-        self.cfg = Bilbo._auto_config or cfg_file  
+        self.cfg = Bilbo._auto_config or cfg_file
         self.config = self._get_config_parser(self.cfg)
         self.pipeline = self.get_pipeline(self.config)
         #TODO make a logger by default
@@ -28,8 +28,8 @@ class Bilbo:
         config_name = ''.join(('config/pipeline_', tag_level, '.cfg'))
         try:
             Bilbo._auto_config = text_resource_stream(config_name, __name__)
-        except:
-            print('Unknown autoload name of tag')
+        except RessourceError as err:
+            print("Ressource Error Unknown: {0}".format(err))
 
     def _get_config_parser(self, cfg):
         config =ConfigParser()
