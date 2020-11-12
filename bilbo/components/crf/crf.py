@@ -107,6 +107,7 @@ class Crf(Estimator):
         logger.info('Start to predict')         
         dats, data_fd = self.fit(document)
         result = self.tag_list(dats)
+        
         xyseq = crf_datas.extract_y(crf_datas.fd2sections(data_fd, ' '))
         
         result_label = []

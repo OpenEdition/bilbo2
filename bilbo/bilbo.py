@@ -70,6 +70,8 @@ class Bilbo:
         :param document: XML document
         """
         for steps in self.pipeline:
+            if steps == "language":
+                self.language(self.document)
             if steps == "shape_data":
                 self.shape_data(self.document)
             elif steps == "features":
@@ -87,6 +89,18 @@ class Bilbo:
 
         if mode == "evaluate":
             self.evaluate_model()
+
+    def language(self, document):
+        """
+        Detect language of each section
+
+        :param document: XML document
+
+        :returns: document with lang detection
+        """
+        from bilbo.components.language.language import Language
+        lang = Language(self.config, type_config='Dict')
+        return lang.transform(document)
 
     def shape_data(self, document):
         """

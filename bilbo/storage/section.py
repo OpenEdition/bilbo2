@@ -20,6 +20,7 @@ class Section(object):
         self.section_xml = section_xml
         self.bibl_status = bibl_status
         self.keys = keys
+        self.lang = 'fr'
 
         if tokens is None:
             self.tokens = []
@@ -38,3 +39,4 @@ class Section(object):
         for token in self.tokens:
             print(token.str_value)
         print("")
+

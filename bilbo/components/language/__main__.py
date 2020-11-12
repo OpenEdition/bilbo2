@@ -1,15 +1,15 @@
-"""shape module"""
+"""language module"""
 
 from bilbo.libs.opts import Parser
+from bilbo.components.language.language import Language
 from bilbo.importer import Importer
-from bilbo.components.shape_data.shape_data import ShapeSection
 from bilbo.utils.bilbo_logger import get_logger
 
 args = Parser.parse_arguments()
 verbosity = args.verbose
 logger = get_logger(name=__name__, verbosity=args.verbose)
 
-cfg_shape_data = args.cfgshapedata
+cf = args.cfglanguage
 input_ = args.input_file
 str_ = args.str_input
 is_file = True if args.input_file else False
@@ -19,11 +19,9 @@ if str_:
 
 imp = Importer(input_)
 doc = imp.parse_xml(tag, is_file)
-logger.debug('Instantiate Bilbo')
+logger.debug('Start detect lang')
 
-shaped_data = ShapeSection(cfg_shape_data)
-shaped_data.transform(doc)                           
+lang = Language(cf)
+lang.transform(doc)                           
 for section in doc.sections:
-    print(section.section_naked)
-    for token in section.tokens:
-        print('Token:{0}\t Label:{1} \t Xpath:{2}'.format(token.str_value, token.label, token.xpath))
+    print('{0}\t - LANG : {1}'.format(section.section_naked, section.lang))
