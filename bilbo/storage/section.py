@@ -20,7 +20,7 @@ class Section(object):
         self.section_xml = section_xml
         self.bibl_status = bibl_status
         self.keys = keys
-        self.lang = 'fr'
+        self.lang = 'default'
 
         if tokens is None:
             self.tokens = []
@@ -31,6 +31,18 @@ class Section(object):
             self.token_str_lst = []
         else:
             self.token_str_lst = token_str_lst
+
+    def check_constraint(self, constraint):
+        if constraint is None:
+            return True
+        return self._check_on_section(constraint)
+            
+    def _check_on_section(self, constraint):
+        for s in constraint.get('section', list()):
+            for k, v in s.items():
+                if (v != getattr(self,k)):
+                    return False
+        return True
 
     def print_tokens(self):
         """

@@ -7,6 +7,7 @@ import pycrfsuite
 import bilbo.utils.crf_datas as crf_datas
 from bilbo.components.component import Component, Estimator, Extractor
 from bilbo.eval import Evaluation
+from bilbo.exceptions import EstimatorError
 from bilbo.utils.loader import binary_resource_stream, text_resource_stream
 
 import logging
@@ -30,6 +31,7 @@ class Crf(Estimator):
         self.seed = self.parser.getArgs(self.cfg_file, "seed")
         self.option_crf = self.parser.getArgs(self.cfg_file, "optionCrf")
         self.algo_crf = self.parser.getArgs(self.cfg_file, "algoCrf")
+        self.constraint = self.parser.getArgs(self.cfg_file, "constraint", type_opt='dict')
 
     def fit(self, document):
         if isinstance(document, list):
@@ -43,6 +45,10 @@ class Crf(Estimator):
         else:            
             with open(self.patterns_file, 'r') as pattern_fd:
                 patterns = crf_datas.fd2patterns(pattern_fd)
+        if not data_fd:
+            msg = 'No one section is been processed for this estimator'
+            logger.error(msg)
+            raise EstimatorError(msg) 
         xyseq = crf_datas.extract_y(crf_datas.fd2sections(data_fd, ' '))
         dats = crf_datas.apply_patterns(xyseq, patterns)
         return dats, data_fd 
@@ -58,7 +64,7 @@ class Crf(Estimator):
         logger.info('Start to append features for crf data')         
         data = []
         for sec in document.sections:
-            if sec.bibl_status is True:
+            if sec.check_constraint(self.constraint):
                 for tok in sec.tokens:
                     if tok.str_value == "None":
                         continue
@@ -73,13 +79,14 @@ class Crf(Estimator):
     def _add_to_doc(self, document, results):
         cpt_crf_res = 0
         for sec in document.sections:
-            if sec.bibl_status == True:
+            if sec.check_constraint(self.constraint):
                 section_result = results[cpt_crf_res]
                 for j, tok in enumerate(sec.tokens):
                     _ , tok.predict_label = section_result[j]
                 cpt_crf_res += 1
 
     def transform(self, document, mode):
+        logger.info('Start to transform with the transformer: {}'.format(Crf._parser_name))
         super(Crf, self).transform(document, mode)
 
     def train(self, document):
@@ -104,7 +111,7 @@ class Crf(Estimator):
 
         :returns: list of token and label tagged
         """
-        logger.info('Start to predict')         
+        logger.info('Start to predict')    
         dats, data_fd = self.fit(document)
         result = self.tag_list(dats)
         

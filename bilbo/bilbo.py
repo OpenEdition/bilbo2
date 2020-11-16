@@ -9,6 +9,7 @@ from bilbo.generateXml import GenerateXml
 from bilbo.importer import Importer
 from bilbo.eval import Evaluation
 from bilbo.utils.bilbo_logger import get_logger
+import re
 from bilbo.utils.loader import binary_resource_stream, text_resource_stream, RessourceError
 
 class Bilbo:
@@ -71,15 +72,15 @@ class Bilbo:
         """
         for steps in self.pipeline:
             if steps == "language":
-                self.language(self.document)
-            if steps == "shape_data":
+                self.language(self.document, mode)
+            elif steps == "shape_data":
                 self.shape_data(self.document)
             elif steps == "features":
                 self.features(self.document)
             elif steps == "svm":
                 self.svm(self.document, mode)
-            elif steps == "crf":
-                self.crf(self.document, mode)
+            elif re.search('crf', steps):
+                self.crf(self.document, mode, steps)
             elif steps == "generate":
                 if mode == 'train' or mode == 'evaluate':
                     break
@@ -90,7 +91,7 @@ class Bilbo:
         if mode == "evaluate":
             self.evaluate_model()
 
-    def language(self, document):
+    def language(self, document, mode):
         """
         Detect language of each section
 
@@ -100,7 +101,7 @@ class Bilbo:
         """
         from bilbo.components.language.language import Language
         lang = Language(self.config, type_config='Dict')
-        return lang.transform(document)
+        lang.transform(document, mode)
 
     def shape_data(self, document):
         """
@@ -129,7 +130,7 @@ class Bilbo:
         document = feat.transform(document)
         return document
 
-    def crf(self, document, mode):
+    def crf(self, document, mode, steps):
         """
         Run a crf on a corpus (can train, test or evaluate)
 
@@ -137,16 +138,10 @@ class Bilbo:
         """
         from bilbo.components.crf.crf import Crf
         Crf._auto_config = Bilbo._auto_config
+        Crf._parser_name = steps
         crf = Crf(self.config, type_config='Dict')
         return crf.transform(document, mode)
             
-        #if mode == "evaluate":
-        #    crf.evaluate(document)
-
-        #else:
-        #    print("Error: Mauvais mode: choisir l'option\
-        #            -m [train / tag / evalluate]")
-
     def generate_output(self, document, output, format_):
         """
         Generate the XML final file

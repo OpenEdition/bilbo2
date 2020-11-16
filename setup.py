@@ -10,7 +10,7 @@ setup(
     author_email = "mathieu.orban@openedition.org",
     description = "Automatic reference labeling",
     long_description = open('README.md').read(),
-    install_requires= ["lxml>=4.3", "python-crfsuite==0.9.6", "libsvm==3.23.0.4"],
+    install_requires= ["lxml>=4.3", "python-crfsuite==0.9.6", "libsvm==3.23.0.4"," langdetect>=1.0.8"],
     extras_require = {'develop': ['unittest-xml-reporting']},
     #Include MANIFEST.in file
     include_package_data = True,

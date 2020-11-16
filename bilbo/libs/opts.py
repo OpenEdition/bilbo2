@@ -3,8 +3,8 @@
 import sys
 import argparse
 import logging
-from configparser import ConfigParser
-logger = logging.getLogger()
+from configparser import ConfigParser, NoOptionError
+logger = logging.getLogger(__name__)
 
 class Parser(object):
     
@@ -46,13 +46,20 @@ class BilboParser:
 
     @classmethod
     def getArgs(cls, args, opt, type_opt, pipe):
-        section_pipe = cls._section_args if pipe is None else pipe
-        if type_opt is None:
-            return args.get(section_pipe, opt)
-        if type_opt== 'lst':
-            return [itm.strip() for itm in args.get(section_pipe, opt).split(",")]
-        if type_opt== 'eval':
-            return eval("[%s]" % args.get(section_pipe, opt))
+        try:
+            section_pipe = cls._section_args if pipe is None else pipe
+            if type_opt is None:
+                return args.get(section_pipe, opt)
+            if type_opt== 'lst':
+                return [itm.strip() for itm in args.get(section_pipe, opt).split(",")]
+            if type_opt== 'eval':
+                return eval("[%s]" % args.get(section_pipe, opt))
+            if type_opt== 'dict':
+                return eval("%s" % args.get(section_pipe, opt))
+        except NoOptionError as e:
+            logger.warn(e)
+            return None
+            
 
 class IniParser(BilboParser):
     @classmethod

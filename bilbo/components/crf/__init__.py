@@ -4,7 +4,7 @@ from bilbo.libs.opts import Parser
 
 MODENAME = __name__.split('.')[-1]
 
-parser = Parser.get_parser(name=MODENAME, help="Features")
+parser = Parser.get_parser(name=MODENAME, help="Crf")
 parser.add_argument('--cfgcrf', '-cf', type=str, metavar="Config crf")
 parser.add_argument('--model', '-M', type=str, metavar="model file")
 parser.add_argument('--input', '-i', type=str, metavar="fichier d'input")

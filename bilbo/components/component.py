@@ -1,6 +1,7 @@
 "Component"
 
 from bilbo.libs.opts import BilboParser 
+from bilbo.exceptions import EstimatorError
 from bilbo.utils.loader import binary_resource_stream, text_resource_stream, filename_resource
 import os
 
@@ -42,11 +43,15 @@ class Component:
 class Estimator(Component):
     """Estimator Extract Class"""
     def transform(self, document, mode):
-        if mode == "train":
-            self.train(document)
-        elif mode == "tag" or mode== "evaluate":
-            results = self.predict(document)
-            self._add_to_doc(document, results)
+        try:
+            if mode == "train":
+                self.train(document)
+            elif mode == "tag" or mode== "evaluate":
+                results = self.predict(document)
+                self._add_to_doc(document, results)
+        except EstimatorError as e:
+            pass
+            
     
     def train(self, document):
         pass
