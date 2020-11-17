@@ -3,6 +3,16 @@
 If you want to start and understand how bilbo is handling each pipeline, you can launch independantly some test on bilbo component. As above you can do in CLI or in Interactive Python. Beware input of each component. Examples: it does not make sense to lauch CRF modules if you have not extract features previously (in a file or in bilbo data structure).
 
 
+## Overview ##
+
+For an overview and a test of cli usage, from a terminal, run:
+
+```
+cd bilbo2
+/bin/bash bilbo/tests/bilbo_demo.sh -v
+```
+
+You can add -v argument to see output. 
 
 ## Command Line Interface API ##
 

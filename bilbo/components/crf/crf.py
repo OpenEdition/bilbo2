@@ -18,6 +18,7 @@ class Crf(Estimator):
     """
     CRF class
     """
+    _module_name = 'crf' 
     _parser_name = 'crf' 
     _auto_config = False 
 
@@ -139,7 +140,7 @@ class Crf(Estimator):
         """
         all_result = []
         tagger = pycrfsuite.Tagger()
-        if Crf._auto_config: 
+        if Crf._auto_config:
             file_pk = self._auto_load('binary', self.model_file)
             tagger.open_inmemory(file_pk.read())
             file_pk.close()

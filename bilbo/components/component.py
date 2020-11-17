@@ -14,6 +14,9 @@ class Component:
     def get_parser_name(cls):
         return cls._parser_name
 
+    @classmethod
+    def get_module_name(cls):
+        return cls._module_name
 
     def __init__(self, cfg_file, type_config):
         self.cfg_file = cfg_file
@@ -31,7 +34,7 @@ class Component:
 
     def _auto_load(cls, mode, path):
         fname = os.path.basename(path)
-        resources = ''.join(('resources.models.', cls.get_parser_name()))
+        resources = ''.join(('resources.models.', cls.get_module_name()))
         if mode == 'binary':
             return binary_resource_stream(fname, resources)
         elif mode == 'text':

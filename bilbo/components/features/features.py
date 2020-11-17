@@ -16,6 +16,7 @@ class FeatureHandler(Component):
     Feature handler
     """
     _parser_name = 'features' 
+    _module_name = 'features' 
     _auto_config = False 
 
     def __init__(self, cfg_file, type_config='ini'):

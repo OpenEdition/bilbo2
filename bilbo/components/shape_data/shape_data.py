@@ -16,6 +16,7 @@ class ShapeSection(Extractor):
     shape the section to the right form
     """
     _parser_name = 'shaper' 
+    _module_name = 'shaper' 
 
     def __init__(self, cfg_file, type_config='ini', lang='fr'):
         super(ShapeSection, self).__init__(cfg_file, type_config)

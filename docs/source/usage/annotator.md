@@ -1,14 +1,36 @@
 ## Annotator bilbo usage
 
-### For bibliography
+<aside class="warning">
+   WARNING!
+   You can autoload pre-trained models and pipeline with the Bilbo.load('bibl/bibl_lang') method. You have to give all paths in the config file when you want to train or test your own config : just instantiate bilbo as  Bilbo(doc, 'path_to_your_config'). For note is not already implemented with auloader.
+</aside>
+
+### For bibliography (Standard tagging)
 
 
 ```python
 imp = Importer('resources/corpus/bibl/test_bibl.xml')
 doc = imp.parse_xml('bibl')
-bilbo = Bilbo(doc, 'pipeline_bibl.cfg')
+
+Bilbo.load('bibl')
+
+bilbo = Bilbo(doc)
 bilbo.run_pipeline('tag', '/tmp/output.xml', format_= None)
 ```
+
+### For bibliography (With Lang Detection tagging)
+
+
+```python
+imp = Importer('resources/corpus/bibl/test_bibl.xml')
+doc = imp.parse_xml('bibl')
+
+Bilbo.load('bibl_lang')
+
+bilbo = Bilbo(doc')
+bilbo.run_pipeline('tag', '/tmp/output.xml', format_= None)
+```
+
 
 ### For note
 

@@ -16,13 +16,13 @@ class Bilbo:
     """ Bilbo class """
     _auto_config = False
 
-    def __init__(self, document, cfg_file=None):
+    def __init__(self, document, cfg_file=None,verbosity=3):
         self.document = document
         self.cfg = Bilbo._auto_config or cfg_file
         self.config = self._get_config_parser(self.cfg)
         self.pipeline = self.get_pipeline(self.config)
         #TODO make a logger by default
-        #logger = get_logger(verbosity=4)
+        logger = get_logger(verbosity=verbosity)
 
     @staticmethod
     def load(tag_level):
@@ -161,7 +161,7 @@ class Bilbo:
         gold = []
         for sec in self.document.sections:
             for tok in sec.tokens:
-                predict = tok.predict_label if tok.predict_label is not None else 'note'
+                predict = tok.predict_label if tok.predict_label is not None else 'bibl'
                 pred.append(predict)
                 gold.append(tok.label)
 

@@ -22,6 +22,6 @@ doc = imp.parse_xml(tag, is_file)
 logger.debug('Start detect lang')
 
 lang = Language(cf)
-lang.transform(doc)                           
+lang.transform(doc, mode='tag')                           
 for section in doc.sections:
     print('{0}\t - LANG : {1}'.format(section.section_naked, section.lang))

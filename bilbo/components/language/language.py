@@ -13,6 +13,7 @@ class Language(Estimator):
     shape the section to the right form
     """
     _parser_name = 'language' 
+    _module_name = 'language' 
 
     def __init__(self, cfg_file, type_config='ini'):
         super(Language, self).__init__(cfg_file, type_config)
@@ -51,6 +52,7 @@ class Language(Estimator):
     def _add_to_doc(self, document, result):
         for i, section in enumerate(document.sections):
             section.lang = self.map_lang(self.default, result[i])
+            logger.debug('Lang is :{}'.format(section.lang))         
 
     def map_lang(self, rule, detected):
         if rule is None:

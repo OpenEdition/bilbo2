@@ -32,18 +32,7 @@ The documentation includes more detailed [Installation Instructions](https://bil
 ## Usage
 
 
-For an overview and a test of cli usage, from a terminal, run:
-
-```
-cd bilbo2
-/bin/bash bilbo/tests/bilbo_demo.sh -v
-```
-
-You can add -v argument to see output. 
-
-See [docs](https://bilbo2-openedition.readthedocs.io/en/latest/usage/toolkit.html) for complete cli usage.
-
-See [examples](https://github.com/OpenEdition/bilbo2/blob/master/examples/examples.ipynb) for python interface usage
+See [docs](https://bilbo2-openedition.readthedocs.io/en/latest/usage/toolkit.html) for complete cli usage  and [examples](https://github.com/OpenEdition/bilbo2/blob/master/examples/examples.ipynb) for python interface usage
 
 ## Author and contributors
 (C)Copyright 2019 OpenEdition by [Mathieu Orban](mailto:mathieu.orban@openedition.org)
@@ -63,6 +52,7 @@ As external softwares, it is used `python-crfsuite`_ for CRF learning and infere
 2. [LibSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) A Library for Support Vector Machines by Chih-Chung Chang and Chih-Jen Lin
 3. [Lxml](https://lxml.de/) Library for processing XML and HTML in the Python Language.
 4. [setuptools](https://pypi.python.org/pypi/setuptools): to install Bilbo2.
+4. [langdetect](https://github.com/Mimino666/langdetect) Langage detection.
 
 
 ## Contributing

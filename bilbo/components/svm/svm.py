@@ -34,6 +34,7 @@ class Svm(Estimator):
     SVM class
     """
     _parser_name = 'svm'
+    _module_name = 'svm'
     _auto_config = False 
 
     def __init__(self, cfg_file, type_config='ini'):
