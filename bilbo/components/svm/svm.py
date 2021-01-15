@@ -149,6 +149,8 @@ class Svm(Estimator):
                     str_data = str_data + ' {}:{}'.format(k, str(v))
             str_data = str_data + '\n'
             data_svm.write(str_data)
+        data_svm.close()
+
 
     def train(self, document):
         """
