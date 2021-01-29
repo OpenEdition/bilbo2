@@ -30,7 +30,8 @@ The documentation includes more detailed [Installation Instructions](https://bil
 
 ## Usage
 
-Getting started with [bilbo2](https://bilbo2-openedition.readthedocs.io/en/start/usage.html)
+[Getting started](https://bilbo2-openedition.readthedocs.io/en/latest/start/usage.html)  
+
 See [docs](https://bilbo2-openedition.readthedocs.io/en/latest/usage/toolkit.html) for complete cli usage  and [examples](https://github.com/OpenEdition/bilbo2/blob/master/examples/examples.ipynb) for python interface usage
 
 ## Author and contributors
