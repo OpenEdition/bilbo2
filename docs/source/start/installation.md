@@ -3,7 +3,7 @@
 Make sure you full filled the [requirements](./requirements.html) before going any further.
 
 You can now running the installation of python module with setup.py. It will :
-* Compile [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) libraries (C++) and install an python binding interface of its library.
+* Install [LIBSVM](https://github.com/ocampor/libsvm). A python binding to libsvm.
 * Install [python-crfsuite](https://python-crfsuite.readthedocs.io/en/latest/#). A smart python binding to crfsuite. 
 * Install [lxml](https://lxml.de/), python libraries to process xml document. 
 
@@ -43,7 +43,13 @@ rm -rvf bilbo2.egg-info/
 rm -rvf dist/
 ```
 
-You can use bash script clean.sh. Note that you have to replace the right path to your repository in this script. 
+Or you can use directly bash script clean.sh.
+
+```bash
+./clean.sh
+```
+
+Note that you have to replace the **right path** to your repository in the clean.sh script. 
 
 ## Optional libraries ##
 
