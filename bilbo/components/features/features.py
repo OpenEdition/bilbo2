@@ -6,12 +6,12 @@ from bilbo.components.features.externalfeatures import ExternalFeature
 from bilbo.components.features.localfeatures import LocalFeature
 from bilbo.components.features.regexfeatures import RegexFeature
 from bilbo.components.features.xmlfeatures import XmlFeature
-from bilbo.components.component import Component
+from bilbo.components.component import Extractor
 
 import logging
 logger = logging.getLogger(__name__)
 
-class FeatureHandler(Component):
+class FeatureHandler(Extractor):
     """
     Feature handler
     """
@@ -89,7 +89,7 @@ class FeatureHandler(Component):
             f_reg = RegexFeature(func_name, pattern)
             self.lst_f_reg[(func_name, pattern)] = f_reg
 
-    def transform(self, document):
+    def _transform(self, document):
         """
         Generate the features and push them into the section
         """

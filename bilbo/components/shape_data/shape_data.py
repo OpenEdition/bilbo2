@@ -6,7 +6,7 @@ from lxml import etree
 
 from bilbo.tokenizers.tokenizers import Tokenizer
 from bilbo.storage.token import Token
-from bilbo.components.component import Component, Extractor
+from bilbo.components.component import Extractor
 
 import logging
 logger = logging.getLogger(__name__)
@@ -64,12 +64,11 @@ class ShapeSection(Extractor):
                     tokens_tagged.append([token, tag])
         return tokens_tagged
 
-    def transform(self, document, is_file=True):
+    def _transform(self, doc):
         """
         Parse an XML section and shape it to the section object
         :param section: XML section
         """
-        doc = self.fit(document)
         tag = doc.tag
         logger.info('Start to extract for each section corresponding token')
         for section in doc.sections:
@@ -78,13 +77,6 @@ class ShapeSection(Extractor):
             self.extract_from_section(cur_section, elements, tag)
             logger.debug('One section is finished')
         return doc
-
-    def fit(self, document):
-        if isinstance(document, list):
-            raise Exception('You must import Document first')
-        else:
-            data = document
-        return data
 
     def extract_from_section(self, section, elements, tag, last_label=None):
         label = last_label if last_label else self._getLabel(elements)

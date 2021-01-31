@@ -79,7 +79,14 @@ class Extractor(Component):
     def extract_from_section(section, *args):
         pass
 
-    def fit(document):
-        pass
+    def fit(self, document):
+        if isinstance(document, list):
+            raise Exception('You must import Document first')
+        else:
+            data = document
+        return data
 
+    def transform(self, document):
+        doc = self.fit(document)
+        return self._transform(doc)
 
