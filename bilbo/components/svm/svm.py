@@ -68,14 +68,14 @@ class Svm(Estimator):
             if results[i] != 1:
                 document.sections[i].bibl_status = False
         
-    def fit(self, document):
+    def fit(self, document, keep_on_doc=False):
         if isinstance(document, str):
             data_file = str(document)
             y, x = svmutil.svm_read_problem(data_file)
         elif isinstance(document, object):
             y = []
             x =[]
-            for y_section,x_section in self.extract_xy(self.get_svm_data(document)):
+            for y_section,x_section in self.extract_xy(self.get_svm_data(document, keep_on_doc)):
                 y.append(y_section)
                 x.append(x_section)
         return y,x
@@ -114,7 +114,7 @@ class Svm(Estimator):
             del(d_feats['classe'])
             yield y, fmt_feats(d_feats)
 
-    def get_svm_data(self, document):
+    def get_svm_data(self, document, keep_on_doc):
         """
         shape the svm features data for the svm
         :param document: document object of the document
@@ -124,6 +124,8 @@ class Svm(Estimator):
         for section in document.sections:                       
             dict_feat = collections.OrderedDict()
             dict_feat['classe'] = 1 if "</bibl>" in section.str_value else -1
+            if keep_on_doc:
+                section.bibl_status = True if (dict_feat['classe'] == 1) else False      
             dict_feat.update(self.word_count(section))
             indice = len(self._vocab)
             d = collections.OrderedDict()
@@ -160,7 +162,7 @@ class Svm(Estimator):
         """
         targs, tkwargs = svm_datas.svm_opts() # model training arguments
         self._vocab = self.generate_vocab_dict(document)
-        y, x  =  self.fit(document)
+        y, x  =  self.fit(document, keep_on_doc=True)
         m = svmutil.svm_train(y, x, *targs)
         svmutil.svm_save_model(self.model_file, m)
         generatePickle(self._vocab, self.vocab_file)

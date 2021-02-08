@@ -34,11 +34,11 @@ class Crf(Estimator):
         self.algo_crf = self.parser.getArgs(self.cfg_file, "algoCrf")
         self.constraint = self.parser.getArgs(self.cfg_file, "constraint", type_opt='dict')
 
-    def fit(self, document):
+    def fit(self, document, keep_on_doc=False):
         if isinstance(document, list):
             data_fd = document
         else:
-            data_fd = self.get_crf_data(document)
+            data_fd = self.get_crf_data(document, keep_on_doc)
         if Crf._auto_config:
             pattern_fd = self._auto_load('text', self.patterns_file)
             patterns = crf_datas.fd2patterns(pattern_fd)
@@ -54,7 +54,7 @@ class Crf(Estimator):
         dats = crf_datas.apply_patterns(xyseq, patterns)
         return dats, data_fd 
     
-    def get_crf_data(self, document):
+    def get_crf_data(self, document, keep_on_doc):
         """
         append the features data for the crf
 
@@ -98,7 +98,7 @@ class Crf(Estimator):
         """
         t_opts = crf_datas.trainer_opts(self.name, self.option_crf)
         trainer = pycrfsuite.Trainer(self.algo_crf, params=t_opts)
-        (dats, _) = self.fit(document)
+        (dats, _) = self.fit(document, keep_on_doc=True)
         for xseq, yseq in dats:
             yseq = [y if y != None else "Nolabel" for y in yseq]
             trainer.append(xseq, yseq)

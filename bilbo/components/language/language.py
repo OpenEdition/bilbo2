@@ -22,12 +22,6 @@ class Language(Estimator):
     def transform(self, document, mode):
         super(Language, self).transform(document, mode)
 
-    def fit(self, document):
-        if isinstance(document, list):
-            raise Exception('You must import Document first')
-        else:
-            return document
-
     def predict(self, document):
         """
         tag document's tokens given a model
@@ -56,7 +50,7 @@ class Language(Estimator):
 
     def map_lang(self, rule, detected):
         if rule is None:
-            return lang
+            return detected
         for lang in rule.get('lang', list()):
             if detected == lang:
                 return lang
