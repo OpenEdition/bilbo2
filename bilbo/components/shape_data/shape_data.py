@@ -47,7 +47,6 @@ class ShapeSection(Extractor):
 
         :returns: list of token annotated [token, label]
         """
-        opt = tokenizer_option
         # tag_option = dictionnary read from the cfg_file importer.crg.ini
         # it allow to specify the tag : tag[read] = tag_wanted
         tag_option = eval(self.tags_options)

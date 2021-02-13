@@ -36,4 +36,15 @@ class Token(object):
         return self.str_value + self.separator
 
     
+    def check_constraint(self, constraint):
+        if constraint is None:
+            return True
+        return self._check_on_token(constraint)
+            
+    def _check_on_token(self, constraint):
+        for s in constraint.get('token', list()):
+            for k, v in s.items():
+                if (v != getattr(self,k)):
+                    return False
+        return True
 

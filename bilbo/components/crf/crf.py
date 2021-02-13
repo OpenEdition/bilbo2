@@ -7,6 +7,7 @@ import pycrfsuite
 import bilbo.utils.crf_datas as crf_datas
 from bilbo.components.component import Component, Estimator, Extractor
 from bilbo.eval import Evaluation
+from bilbo.rule import Rule
 from bilbo.exceptions import EstimatorError
 from bilbo.utils.loader import binary_resource_stream, text_resource_stream
 
@@ -64,9 +65,12 @@ class Crf(Estimator):
         """
         logger.info('Start to append features for crf data')         
         data = []
+        rule = Rule(self.constraint) 
         for sec in document.sections:
-            if sec.check_constraint(self.constraint):
+            if rule.check(sec):
                 for tok in sec.tokens:
+                    if not rule.check(tok):
+                        continue
                     if tok.str_value == "None":
                         continue
                     feature = tok.str_value+" "
@@ -79,10 +83,14 @@ class Crf(Estimator):
 
     def _add_to_doc(self, document, results):
         cpt_crf_res = 0
+        rule = Rule(self.constraint) 
         for sec in document.sections:
-            if sec.check_constraint(self.constraint):
+            if rule.check(sec):
                 section_result = results[cpt_crf_res]
                 for j, tok in enumerate(sec.tokens):
+                    sec.tokens = rule.check_link(sec.tokens,j)
+                    if not (rule.check(tok)):
+                        continue
                     _ , tok.predict_label = section_result[j]
                 cpt_crf_res += 1
 
