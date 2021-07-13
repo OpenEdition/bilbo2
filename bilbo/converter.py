@@ -4,9 +4,9 @@ from lxml import etree
 import os
 import subprocess
 
-TO_TEI = ['bilbo/stylesheets/author.xsl', 'bilbo/stylesheets/comma.xsl', 'bilbo/stylesheets/rm-comma.xsl']
+TO_TEI = ['bilbo/stylesheets/rule.xsl', 'bilbo/stylesheets/cleaner.xsl']
 
-TO_JATS = ['bilbo/stylesheets/author.xsl', 'bilbo/stylesheets/rm-attribute.xsl',  'bilbo/stylesheets/tei-to-jats.xsl']
+TO_JATS = ['bilbo/stylesheets/rule.xsl', 'bilbo/stylesheets/cleaner.xsl', 'bilbo/stylesheets/tei-to-jats.xsl']
 
 class Converter(object):
     """

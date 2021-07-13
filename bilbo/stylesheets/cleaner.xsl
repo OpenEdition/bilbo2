@@ -2,9 +2,12 @@
    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
    xmlns:tei = "http://www.tei-c.org/ns/1.0"
    exclude-result-prefixes="tei">
+<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+<!-- <xsl:strip-space elements="*"/>-->
+<!-- identity transform -->
 <!--empty template suppresses this attribute-->
 <xsl:template match="tei:c[@bilbo]">
-		<xsl:apply-templates select="text()"/>
+		<xsl:value-of select="."/>
 </xsl:template>
 
 <xsl:template match="@bilbo"/>
