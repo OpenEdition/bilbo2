@@ -57,11 +57,32 @@ xmlns:tei="http://www.tei-c.org/ns/1.0">
         </xsl:choose>
 </xsl:template>
 
-
-
 <!-- Deleted sibling comma after a title tag, copy else --> 
 <xsl:template match="tei:c[@bilbo][preceding-sibling::*[1][self::tei:title]]" />
 
+<!-- Group together bilbscope, comma and date under biblscope when comma is '-'coy else -->
+<xsl:template match="tei:biblScope[@bilbo]" priority="1">
+        <xsl:choose>
+		<xsl:when test="following-sibling::tei:c[text()[contains(., '-')]] and following-sibling::tei:c[1]/following-sibling::tei:date[1][@bilbo]">
+			<xsl:copy>
+				<xsl:apply-templates select="@*|node()"/>
+				<xsl:value-of select="following-sibling::tei:c[1]"/>
+				<xsl:value-of select="following-sibling::tei:c[1]/following-sibling::tei:date[1]"/>
+			</xsl:copy>
+		 </xsl:when>
 
+		 <xsl:otherwise>
+			 <xsl:copy>
+				<xsl:apply-templates select="@*|node()"/>
+			 </xsl:copy>
+		  </xsl:otherwise>
+        </xsl:choose>
+</xsl:template>
+
+<!-- Deleted date when preceded by comma and biblScope -->
+<xsl:template match="tei:date[@bilbo][preceding-sibling::*[1]/self::tei:c[text()[contains(., '-')]] and  preceding-sibling::*[2]/self::tei:biblScope[@bilbo]]"/>
+
+<!-- Deleted comma when surrounded by date and biblScope -->
+<xsl:template match="tei:c[text()[contains(., '-')] and preceding-sibling::*[1]/self::tei:biblScope[@bilbo] and following-sibling::*[1]/self::tei:date[@bilbo]]"/>
 
 </xsl:stylesheet>
