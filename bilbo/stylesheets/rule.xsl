@@ -101,4 +101,19 @@ xmlns:tei="http://www.tei-c.org/ns/1.0">
 <!-- Deleted comma when surrounded by date and biblScope -->
 <xsl:template match="tei:c[text()[contains(., '-')] and preceding-sibling::*[1]/self::tei:biblScope[@bilbo] and following-sibling::*[1]/self::tei:date[@bilbo]]"/>
 
+<!-- Added sibling comma to title tag -->
+ <xsl:template match="tei:journal[@bilbo]">
+	<xsl:element name="title" namespace="http://www.tei-c.org/ns/1.0">
+ 	<xsl:attribute name="level">j</xsl:attribute>
+		<xsl:value-of select="."/>
+	</xsl:element>
+</xsl:template>
+<!-- Added sibling comma to title tag -->
+ <xsl:template match="tei:booktitle[@bilbo]">
+	<xsl:element name="title" namespace="http://www.tei-c.org/ns/1.0">
+ 	<xsl:attribute name="level">m</xsl:attribute>
+		<xsl:value-of select="."/>
+	</xsl:element>
+</xsl:template>
+
 </xsl:stylesheet>
