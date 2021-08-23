@@ -34,7 +34,7 @@ This section is marked by:
 * `[shaper]`
 
 ### tokenizerOption ###
-The default value is fine (large available)
+This option is currently unnecessary. The next developments regarding tokenization will make it active soon.
 
 ### tagOptions ###
 This is a wrapper for reduce or rename tag to an other

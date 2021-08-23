@@ -32,7 +32,6 @@ First, load parameters.
 ```python
 dic = """                                                      
 [shaper]                        
-tokenizerOption = fine          
 tagsOptions = {                                                                                 
     "pubPlace": "place",
     "sponsor": "publisher"
