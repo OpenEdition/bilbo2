@@ -18,7 +18,7 @@ class DefaultTokenizer:
 
         self.regexp = re.compile(self._regex_rules)
 
-        #self.loadlist(self.resources+'abbrs.list')
+        self.loadlist(self.resources+'abbrs.list')
         """ Loads the default lexicon (path is /resources/abbrs.list). """
 
         #self.loadlist(self.resources+'villes.list')
