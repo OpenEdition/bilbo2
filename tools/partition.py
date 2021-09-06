@@ -9,11 +9,11 @@ if __name__ == "__main__":
     parser.add_argument('shuf', type=str,
                     help='shuf file path')
     args = parser.parse_args()
-
+    
     file_shuf = args.shuf
-    with open(file_shuf) as f:
+    with open(file_shuf, 'r') as f:
         bibls = list(f)
-
+    
     ratio = args.K
     step = int(len(bibls) * (1 / int(ratio)))
     eval_dir = os.path.dirname(file_shuf)

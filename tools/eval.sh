@@ -11,6 +11,9 @@ shift
 
 tmp="$dirEval"tmp.txt
 shuf="$dirEval"shuf.txt
+train="$dirEval"train_
+test="$dirEval"test_
+tmpeval="$dirEval"tmpeval
 
 for entry in "$dirCorpus"*
 do
@@ -19,13 +22,10 @@ done
 
 sort $tmp | uniq -u | shuf -o "$shuf";
 
-python3 -m bilbo.utils.partition $kfold $shuf
+python3 -m tools.partition $kfold $shuf
 
 rm "$tmp";
 rm "$shuf";
-train="$dirEval"train_
-test="$dirEval"test_
-tmpeval="$dirEval"tmpeval
 
 
 globalEvalFile=${dirEval}evaluation.csv
@@ -37,11 +37,17 @@ do
     python3 -m bilbo.bilbo --action evaluate -c $config -i $test$i -t bibl
     cat eval_to_del.csv >> $globalEvalFile
     echo >> $globalEvalFile
-    tail -n +2 eval_to_del.csv | sed '/^\s*$/d' | sed "s/'/\"/g" >> $tmpeval
 done
 
+cat $globalEvalFile
 
+sed '/\(^\s*$\|^label,precision\)/d' $globalEvalFile | sed "s/'/\"/g" >> $tmpeval
 
+python3 -m tools.format $tmpeval >> $globalEvalFile
+
+#rm $tmpeval
+
+#rm $tmpeval;
 #for f in "$train" "$test"
 #do
 #	echo "$f";

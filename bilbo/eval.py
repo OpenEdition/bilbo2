@@ -286,7 +286,7 @@ class Evaluation:
         for label in self.all_label:
             if counts.get(label) > 0:
                 line = []
-                line.append(label)
+                line.append("'{}'".format(label))
                 line.append(precisions.get(label))
                 line.append(recalls.get(label))
                 line.append(f_measures.get(label))
@@ -294,9 +294,9 @@ class Evaluation:
                 csv_data.append(line)
 
         csv_data.append([])
-        eval_macro = ["mean", macro["macro_p"], macro["macro_r"],\
+        eval_macro = ["{}".format("'mean'"), macro["macro_p"], macro["macro_r"],\
                         macro["macro_f"], sum(counts.values())]
-        eval_macro_w = ["weighted mean", macro["macro_p_w"],\
+        eval_macro_w = ["{}".format("'weighted mean'"), macro["macro_p_w"],\
                         macro["macro_r_w"], macro["macro_f_w"],\
                         sum(counts.values())]
         csv_data.append(eval_macro)
