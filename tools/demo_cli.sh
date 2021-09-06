@@ -71,6 +71,6 @@ run_cmd "python3 -m bilbo.bilbo --action tag -c bilbo/config/pipeline_note.cfg -
 check_test
 
  
-echo -ne  " - CRF MODULES evaluate on fitted data (features already extracted) \n\t Command : python3 -m bilbo.components.crf -cf bilbo/tests/pipeline.cfg -i bilbo/testFiles/feat_train_output.txt --evaluate -v \n"
-run_cmd "python3 -m bilbo.components.crf -cf bilbo/tests/pipeline.cfg -i bilbo/testFiles/feat_train_output.txt --evaluate -v" 
+echo -ne  " - CRF MODULES evaluate on fitted data (features already extracted) \n\t Command : python3 -m bilbo.components.crf -cf bilbo/testFiles/pipeline.cfg -i bilbo/testFiles/feat_train_output.txt --evaluate -v \n"
+run_cmd "python3 -m bilbo.components.crf -cf bilbo/testFiles/pipeline.cfg -i bilbo/testFiles/feat_train_output.txt --evaluate -v" 
 check_test

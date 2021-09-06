@@ -3,13 +3,10 @@ from bilbo.components.shape_data.shape_data import ShapeSection
 from bilbo.importer import Importer
 from bilbo.libs.opts import Parser
 from lxml import etree
-from os.path import dirname, abspath
-import os
 
 
 
-BILBO_HOME = dirname(abspath(__file__))
-config_file = os.path.join(BILBO_HOME, "pipeline.cfg")
+config_file = "bilbo/testFiles/pipeline.cfg"
 text = 'OpenEdition Lab, Développement;' 
 bibl0 = '<TEI xmlns="http://www.tei-c.org/ns/1.0"><bibl>Start from , <hi>OpenEdition Lab, Développement; </hi> Between inside <p>2011,</p> « End to Bilbo »,. </bibl>Tail of bibl</TEI>'
 

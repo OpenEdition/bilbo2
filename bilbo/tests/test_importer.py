@@ -1,11 +1,10 @@
 import unittest
-from lxml import etree, objectify
+from lxml import etree
 from bilbo.importer import Importer
 from bilbo.storage.document import Document
 
-from lxml.doctestcompare import LXMLOutputChecker
 
-TESTDATA_FILENAME = './testdata.xml'
+TESTDATA_FILENAME = 'bilbo/testFiles/testdata.xml'
 
 TAG_XML = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <head/>
@@ -29,7 +28,7 @@ class TestImporter(unittest.TestCase):
         parser = etree.XMLParser(remove_blank_text=True)
         self.XML = TAG_XML.replace('\n', '')
         root = etree.XML(self.XML, parser)
-        with open("testdata.xml", "wb") as f:
+        with open(TESTDATA_FILENAME, "wb") as f:
             f.write(etree.tostring(root, encoding='utf8', method='xml'))
     
     def setUp(self):
