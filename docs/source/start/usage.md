@@ -12,7 +12,7 @@ For an overview of different features and CLI command just launch in a shell :
 
 ```bash
 cd bilbo2
-bash bilbo/tests/bilbo_demo.sh  -v
+bash tools/demo_cli.sh -v
 ```
 
 ### Common use ###
