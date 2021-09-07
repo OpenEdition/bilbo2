@@ -7,11 +7,7 @@ from collections import defaultdict
 from six.moves import reduce
 
 def assign( x,y,t):
-    print(x)
-    print(y)
-    print(t)
     t[x]=y
-    print(t)
     return t
 
 
@@ -19,9 +15,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('file_eval', type=str,
                     help='eval file path')
+    parser.add_argument('output', type=str,
+                    help='eval file path')
     args = parser.parse_args()
     
     file_name = args.file_eval
+    output = args.output
 
     d = defaultdict(list)
     with open(file_name) as csvfile:
@@ -36,52 +35,38 @@ if __name__ == "__main__":
         name = ['precisions', 'recall', 'f-measure', 'occurences']
         for v in list(zip(name, tmp2)):
             labels[k] = reduce( lambda x,y: assign(x,y,t), v)
-
+        
     sep = "-" * (14+5*9)
-    print(sep)
     print("GLOBAL K-FOLD EVALUATION")
+    print(sep)
     print('{:>14}  {:>9}  {:>9}  {:>9}  {:>9}'\
                 .format("label", "precision", "rappel",\
                         "f-measure", "occurences"))
+    print(sep)
+    tmp1 = list()
     for k,v in labels.items():
-        print('{:>14}  {:>9.3f} {:>9.3f} {:>9.3f} {:>9}'. format(k, v.get('precisions'), v.get('recall'),v.get('f-measure'),v.get('occurences')))
+        if (k not in ['mean','weighted mean']):
+            print('{:>14}  {:>9.3f} {:>9.3f} {:>9.3f} {:>9}'.format(k, v.get('precisions'), v.get('recall'),v.get('f-measure'),v.get('occurences')))
+        else:
+            st = '{:>14}  {:>9.3f} {:>9.3f} {:>9.3f} {:>9}'.format(k, v.get('precisions'), v.get('recall'),v.get('f-measure'),v.get('occurences'))
+            tmp1.append(st)
+    print(sep)
+    for t in tmp1:
+        print(t)
+    print(sep)
 
-    
-
-        #print(v)
-        #list (map (lambda x,y: x+y, v))
-    
-
-  #  total = sum(int(r[1]) for r in csv.reader(fin))
-
-  #  parser = argparse.ArgumentParser(description='Process some integers.')
-  #  parser.add_argument('K', type=int,
-  #                  help='k fold integer')
-  #  parser.add_argument('shuf', type=str,
-  #                  help='shuf file path')
-  #  args = parser.parse_args()
-
-  #  file_shuf = args.shuf
-  #  with open(file_shuf) as f:
-  #      bibls = list(f)
-
-  #  ratio = args.K
-  #  step = int(len(bibls) * (1 / int(ratio)))
-  #  eval_dir = os.path.dirname(file_shuf)
-  #  for i in range(ratio):
-  #      test = bibls[:step]
-  #      train = bibls[step:]
-  #      train_name = "".join((eval_dir, '/train_', str(i)))
-  #      test_name = "".join((eval_dir, '/test_', str(i)))
-  #      print(len(train), len (test), len(bibls))
-  #      with open(train_name, "w") as file:
-  #          file.write('<TEI xmlns="http://www.tei-c.org/ns/1.0">\n')
-  #          for row in train:
-  #              file.write(row)
-  #          file.write('</TEI>')
-  #      with open(test_name, "w") as file:
-  #          file.write('<TEI xmlns="http://www.tei-c.org/ns/1.0">\n')
-  #          for row in test:
-  #              file.write(row)
-  #          file.write('</TEI>')
-  #      bibls = train + test
+    csv_data = [["GLOBAL K-FOLD EVALUATION"]]
+    csv_data.append(["label", "precision", "rappel", "f-measure", "occurences"])
+    line=[]
+    mean=[]
+    for k,v in labels.items():
+        if (k not in ['mean','weighted mean']):
+            csv_data.append(["'{}'".format(k),'{:.9f}'.format(v.get('precisions')),'{:.9f}'.format(v.get('recall')),'{:.9f}'.format(v.get('f-measure')),'{:0.0f}'.format(v.get('occurences'))])
+        else:
+            mean.append(["'{}'".format(k),'{:.9f}'.format(v.get('precisions')),'{:.9f}'.format(v.get('recall')),'{:.9f}'.format(v.get('f-measure')),'{:0.0f}'.format(v.get('occurences'))])
+    csv_data.append([])
+    csv_data.extend(mean)
+    with open(output, 'a') as f:
+        writer = csv.writer(f)
+        for row in csv_data:
+            writer.writerow(row)

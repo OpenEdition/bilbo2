@@ -22,7 +22,6 @@ if __name__ == "__main__":
         train = bibls[step:]
         train_name = "".join((eval_dir, '/train_', str(i)))
         test_name = "".join((eval_dir, '/test_', str(i)))
-        print(len(train), len (test), len(bibls))
         with open(train_name, "w") as file:
             file.write('<TEI xmlns="http://www.tei-c.org/ns/1.0">\n')
             for row in train:

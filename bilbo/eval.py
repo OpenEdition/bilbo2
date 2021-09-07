@@ -22,9 +22,9 @@ class Evaluation:
         """
         if self.option == "large":
             labels = set(self.gold + self.predicted)
-            labels.remove("c")
-            labels.remove("bibl")
-            labels.remove("hi")
+            labels.discard("c")
+            labels.discard("bibl")
+            labels.discard("hi")
             self.all_label = sorted(labels)
         else:
             self.all_label = sorted(set(self.gold + self.predicted))

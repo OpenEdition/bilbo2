@@ -31,6 +31,7 @@ class Crf(Estimator):
         self.name = self.parser.getArgs(self.cfg_file, "name")
         self.seed = self.parser.getArgs(self.cfg_file, "seed")
         self.option_crf = self.parser.getArgs(self.cfg_file, "optionCrf")
+        self.verbose_crf = False if self.parser.getArgs(self.cfg_file, "verboseCrf") else True
         self.algo_crf = self.parser.getArgs(self.cfg_file, "algoCrf")
         self.constraint = self.parser.getArgs(self.cfg_file, "constraint", type_opt='dict')
 
@@ -97,7 +98,7 @@ class Crf(Estimator):
         :param document: document object or file
         """
         t_opts = crf_datas.trainer_opts(self.name, self.option_crf)
-        trainer = pycrfsuite.Trainer(self.algo_crf, params=t_opts)
+        trainer = pycrfsuite.Trainer(self.algo_crf, params=t_opts, verbose=self.verbose_crf)
         (dats, _) = self.fit(document, keep_on_doc=True)
         for xseq, yseq in dats:
             yseq = [y if y != None else "Nolabel" for y in yseq]
