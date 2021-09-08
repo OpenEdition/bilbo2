@@ -57,7 +57,7 @@ class FrenchTokenizer(DefaultTokenizer):
                 # If the candidate word must be tokenized (in the dictionary or
                 # corresponds to a compound with uppercase first letters)
                 if candidate.lower() in self.lexicon or \
-                    (re.search(r'(?u)^[A-Z]\w+-[A-Z]\w+$', candidate) and \
+                   (re.search(r'(?u)^[A-Z]\w+-[A-Z]\w+$', candidate) and \
                     j-i < 3):
                     # Place first counter on the last word
                     i = j-1
