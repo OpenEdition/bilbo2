@@ -2,6 +2,17 @@
 import argparse
 import os
 
+
+
+def write_in_file(corpus_lst, directory, name):
+    corpus_name = "".join((directory, '/', name, '_', str(i)))
+    with open(corpus_name, "w") as file:
+        file.write('<TEI xmlns="http://www.tei-c.org/ns/1.0">\n')
+        for row in corpus_lst:
+            file.write(row)
+        file.write('</TEI>')
+    
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('K', type=int,
@@ -20,16 +31,7 @@ if __name__ == "__main__":
     for i in range(ratio):
         test = bibls[:step]
         train = bibls[step:]
-        train_name = "".join((eval_dir, '/train_', str(i)))
-        test_name = "".join((eval_dir, '/test_', str(i)))
-        with open(train_name, "w") as file:
-            file.write('<TEI xmlns="http://www.tei-c.org/ns/1.0">\n')
-            for row in train:
-                file.write(row)
-            file.write('</TEI>')
-        with open(test_name, "w") as file:
-            file.write('<TEI xmlns="http://www.tei-c.org/ns/1.0">\n')
-            for row in test:
-                file.write(row)
-            file.write('</TEI>')
+        write_in_file(test, eval_dir, 'test')
+        write_in_file(train, eval_dir, 'train')
+        #permutation to reorder corpus for k-fold permutation
         bibls = train + test
