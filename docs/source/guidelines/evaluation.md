@@ -32,6 +32,20 @@ Then evaluate:
 python3 -m bilbo.components.MY_COMPONENT -cf MY_PIPELINE.cfg -i INPUT_STANDART_COMPONENT --evaluate
 ```
 
+## K-Fold Croos Validation
+
+For easier use, a bash and python scripts are avalaible for doing K-Fold Cross Validation.
+
+Utilisation : bash tools/eval.sh DIR_TO_CORPUS/  DIR_TO_OUTPUT/ K_FOLD_INTEGER PATH_CONFIG_FILE
+Keep in mind to give directories with the slash  '/'.
+
+OUTPUT are std_out, train and test file splitting and a summary file (evaluation.csv) of the different evaluations.
+
+
+```
+cd bilbo2
+bash tools/eval.sh ../bibl/ ../test/ 5 bilbo/config/pipeline_bibl.cfg
+```
 
 ## Examples
 

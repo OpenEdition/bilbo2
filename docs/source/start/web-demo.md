@@ -1,5 +1,6 @@
 # Demonstration
 
+## SIMPLE WEB API ##
 
 There is a online demonstration of Bilbo2
 * [http://openedition.huma-num.fr/bilbo-api/](http://openedition.huma-num.fr/bilbo-api/) 
@@ -11,3 +12,12 @@ This instance is for test purposes only and should therefore not be used as prod
 The data processing is not kept at all.
 In the future, a full REST web-API is programming. This REST-API should integrate the research of Digital Object Identifier ([DOI](https://www.doi.org/)) for each bibliographics references processed.  
 
+
+## Command Line Interface DEMO ##
+
+For an overview of different features and CLI command just launch in a shell :
+
+```bash
+cd bilbo2
+bash tools/demo_cli.sh -v
+```
