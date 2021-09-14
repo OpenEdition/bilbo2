@@ -50,7 +50,7 @@ xmlns:tei="http://www.tei-c.org/ns/1.0">
 	</xsl:element>
 </xsl:template>
 
-<!-- Renamed booktitle tag to title tag with j attribute -->
+<!-- Renamed booktitle tag to title tag with m attribute -->
  <xsl:template match="tei:booktitle[@bilbo]">
 	<xsl:element name="title" namespace="http://www.tei-c.org/ns/1.0">
  	<xsl:attribute name="level">m</xsl:attribute>
