@@ -78,7 +78,7 @@ xmlns:tei="http://www.tei-c.org/ns/1.0">
 			</xsl:copy>
 		 </xsl:when>
 		
-		<xsl:when test="preceding-sibling::tei:c[text()[contains(., '-')]] and preceding-sibling::tei:c[1]/preceding-sibling::tei:biblScope[1][@bilbo]">
+		<xsl:when test="preceding-sibling::tei:c[1][text()[contains(., '-')]] and preceding-sibling::tei:c[1]/preceding-sibling::tei:biblScope[1][@bilbo]">
 		 </xsl:when>
 
 		 <xsl:otherwise>
