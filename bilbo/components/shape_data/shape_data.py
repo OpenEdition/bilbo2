@@ -34,7 +34,10 @@ class ShapeSection(Extractor):
         :returns: label
         """
         label  = element.xpath('local-name()')
-        label = ''.join((label, '_', element.get("level"))) if element.get("level") is not None else label 
+        if element.get("level") is not None:
+            label = ''.join((label, '_', element.get("level")))
+        if label == 'hi':
+            label =element.xpath('name(./parent::*[1])')
         return label
 
     def _expandTag(self, text, tag, tokenizer_option):
