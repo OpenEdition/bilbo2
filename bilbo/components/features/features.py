@@ -106,7 +106,6 @@ class FeatureHandler(Extractor):
                             raise Exception("la fonction n'existe pas dans le code")
                         else:
                             feature[name] = f_xml(section, i)
-
                 # Features locales
                 logger.debug('Start to process local features')         
                 for f_name in self.lst_fct:
