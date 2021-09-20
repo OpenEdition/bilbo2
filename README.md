@@ -32,9 +32,10 @@ The documentation includes more detailed [Installation Instructions](https://bil
 
 [Getting started](https://bilbo2-openedition.readthedocs.io/en/latest/start/usage.html)  
 
-### CLI Command at a glance
+**CLI Command at a glance**
 
 ```console
+cd bilbo2/
 ./tools/demo_cli.sh -v
 ```
 
@@ -42,7 +43,9 @@ See [docs](https://bilbo2-openedition.readthedocs.io/en/latest/usage/toolkit.htm
 
 ## Author and contributors
 (C)Copyright 2019 OpenEdition.
-Main author and contact: [Mathieu Orban](mathieu.orban@openedition.org)
+
+Main author and contact: Mathieu Orban (mathieu.orban@openedition.org)
+
 Special acknowledgements for Yann Weber, Jérémy Trione and [Yoann Dupont](https://github.com/YoannDupont)
 
 
