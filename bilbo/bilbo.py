@@ -89,7 +89,7 @@ class Bilbo:
                 return "Wrong steps in the pipeline"
 
         if mode == "evaluate":
-            self.evaluate_model()
+            self.evaluate_model(output)
 
     def language(self, document, mode):
         """
@@ -153,7 +153,7 @@ class Bilbo:
         gen = GenerateXml()
         gen.generate_xml(document, output, format_)
 
-    def evaluate_model(self):
+    def evaluate_model(self, output):
         """
         evaluate the model based on the document structure
         """
@@ -171,7 +171,7 @@ class Bilbo:
         precisions, recalls, f_measures, counts, macro = cm.evaluate()
 
         cm.print_std(precisions, recalls, f_measures, counts, macro)
-        cm.print_csv(precisions, recalls, f_measures, counts, macro, "eval_to_del.csv")
+        cm.print_csv(precisions, recalls, f_measures, counts, macro, output)
 
     def svm(self, document, mode):
         """

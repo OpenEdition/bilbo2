@@ -301,7 +301,6 @@ class Evaluation:
                         sum(counts.values())]
         csv_data.append(eval_macro)
         csv_data.append(eval_macro_w)
-
         with open(csvfile, 'w') as csvfile:
             writer = csv.writer(csvfile)
             for row in csv_data:

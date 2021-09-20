@@ -34,8 +34,9 @@ do
    echo ""
     python3 -m bilbo.bilbo --action train -c $config -i $train$i -t bibl
     echo 'VALIDATION NUMBER:'$i |& tee -a $globalEvalFile
-    python3 -m bilbo.bilbo --action evaluate -c $config -i $test$i -t bibl
-    cat eval_to_del.csv >> $globalEvalFile
+	output=$(echo "$config$test$i" | sed 's/\//_/g' | sed 's/\.//g')
+    python3 -m bilbo.bilbo --action evaluate -c $config -i $test$i -t bibl -o $output
+    cat "$output" >> $globalEvalFile
     echo >> $globalEvalFile
 done
 }
