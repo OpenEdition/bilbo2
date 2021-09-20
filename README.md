@@ -32,11 +32,18 @@ The documentation includes more detailed [Installation Instructions](https://bil
 
 [Getting started](https://bilbo2-openedition.readthedocs.io/en/latest/start/usage.html)  
 
+### CLI Command at a glance
+
+```console
+./tools/demo_cli.sh -v
+```
+
 See [docs](https://bilbo2-openedition.readthedocs.io/en/latest/usage/toolkit.html) for complete cli usage  and [examples](https://github.com/OpenEdition/bilbo2/blob/master/examples/examples.ipynb) for python interface usage
 
 ## Author and contributors
-(C)Copyright 2019 OpenEdition by [Mathieu Orban](mailto:mathieu.orban@openedition.org)
-Main contributors are Yann Weber, Jérémy Trione. Special acknowledgements for Yoann Dupont (https://github.com/YoannDupont)
+(C)Copyright 2019 OpenEdition.
+Main author and contact: [Mathieu Orban](mathieu.orban@openedition.org)
+Special acknowledgements for Yann Weber, Jérémy Trione and [Yoann Dupont](https://github.com/YoannDupont)
 
 
 ## License
