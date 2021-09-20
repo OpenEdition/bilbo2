@@ -49,6 +49,6 @@ class Section(object):
         print section
         """
         for token in self.tokens:
-            print(token.str_value)
+            token.printToken()
         print("")
 

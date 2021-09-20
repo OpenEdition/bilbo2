@@ -25,4 +25,3 @@ class Document(object):
         """
         for section in self.sections:
             section.print_tokens()
-
