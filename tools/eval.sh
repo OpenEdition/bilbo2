@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Usage :  bash tools/eval.sh dirCorpus/ dirEval/ kfold config
+# Example :  bash tools/eval.sh corpusfrench/ evaluationdir/ 10 pipeline_bibl.cfg
+# it will concatenante corpusfrench/*.xml
+# split the new corpus in 10 part
+# train a and test with the kfold algorithm.
+# pipeline_bibl.cfg will give the config for the 10 evaluation
+# 
+# WARNING : Keep in mind to give directories with the slash ‘/’.
+
 dirCorpus=${1}
 shift
 dirEval=${1}
