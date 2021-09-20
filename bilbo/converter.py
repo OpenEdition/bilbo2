@@ -4,9 +4,10 @@ from lxml import etree
 import os
 import subprocess
 
-TO_TEI = ['bilbo/stylesheets/rule1.xsl', 'bilbo/stylesheets/rule2.xsl', 'bilbo/stylesheets/rule3.xsl', 'bilbo/stylesheets/cleaner.xsl']
 
-TO_JATS = ['bilbo/stylesheets/rule.xsl', 'bilbo/stylesheets/cleaner.xsl', 'bilbo/stylesheets/tei-to-jats.xsl']
+TO_TEI = ['bilbo/stylesheets/rule1.xsl', 'bilbo/stylesheets/rule2.xsl', 'bilbo/stylesheets/rule3.xsl', 'bilbo/stylesheets/cleaner.xsl']
+TO_JATS = ['bilbo/stylesheets/rule1.xsl', 'bilbo/stylesheets/rule2.xsl', 'bilbo/stylesheets/rule3.xsl', 'bilbo/stylesheets/cleaner.xsl', 'bilbo/stylesheets/rule4.xsl']
+
 
 class Converter(object):
     """
