@@ -29,9 +29,9 @@ class Importer:
             if name_label == tag_separator:
                 section_naked = ''.join(doc.xpath(path+'//text()'))
                 if section_naked:
+                    str_value = etree.tostring(elements, encoding='utf8', method='xml').decode('utf-8')
 #            if tag_separator in elements.tag[-4:]:
-                    cur_section = Section(etree.tostring(elements, encoding='utf8',\
-                            method='xml').decode('utf-8'), section_naked, elements)
+                    cur_section = Section(str_value, section_naked, elements)
                     cur_document.sections.append(cur_section)
         logger.debug('Parsing is done')
         return cur_document

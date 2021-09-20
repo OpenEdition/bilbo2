@@ -95,17 +95,24 @@ class FeatureHandler(Extractor):
         """
         document.keys = self._keys
         for section in document.sections:
-            for xml_f in self.lst_fct_xml:
-                f_xml = getattr(XmlFeature(), xml_f, None)
-                f_xml(section)
-            # Features locales
-            logger.debug('Start to process local features')         
             for i in range(len(section.token_str_lst)):
+                logger.debug('Start to process XML features')         
+                for name in self.lst_fct_xml:
+                    f_xml = getattr(XmlFeature(), name, None)
+                    feature = section.tokens[i].features
+                    print(section.tokens[i].str_value)
+                    if f_xml is None:
+                        raise Exception("la fonction n'existe pas dans le code")
+                    else:
+                        feature[name] = f_xml(section, i)
+
+                # Features locales
+                logger.debug('Start to process local features')         
                 for f_name in self.lst_fct:
                     f_loc = getattr(LocalFeature(), f_name, None)
                     feature = section.tokens[i].features
                     if f_loc is None:
-                        raise Exception("La fonction n'existe pas dans le code")
+                        raise Exception("la fonction n'existe pas dans le code")
                     else:
                         feature[f_name] = f_loc(section, i)
 

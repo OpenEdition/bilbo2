@@ -221,4 +221,3 @@ if __name__== "__main__":
     bilbo = Bilbo(doc, args.cfgfile)
 
     bilbo.run_pipeline(args.action, output, format_)
-    #doc.genereDocumentPivot()

@@ -27,3 +27,14 @@ class SectionDecorator:
 
     def __call__(self, section, *args):
         return self.__extractor(self, section, *args)
+
+
+class XmlDecorator:
+    """ SectionDecorator Class """
+    def __init__(self, extractor):
+        self.__extractor = extractor
+
+    def __call__(self, section, token_id):
+        element = section.section_xml
+        token_path = section.tokens[token_id].xpath
+        return self.__extractor(self, element, token_path)
