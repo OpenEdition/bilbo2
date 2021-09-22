@@ -10,10 +10,9 @@
 		<xsl:value-of select="."/>
 </xsl:template>
 
-<!--<xsl:template match="tei:bibl/tei:bibl[@bilbo]">
+<xsl:template match="tei:bibl/tei:bibl[@bilbo]">
 		<xsl:value-of select="."/>
 </xsl:template>
--->
 
 <xsl:template match="@bilbo"/>
 

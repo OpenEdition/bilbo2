@@ -6,8 +6,8 @@ import subprocess
 
 
 TO_TEI = ['bilbo/stylesheets/rule1.xsl', 'bilbo/stylesheets/rule2.xsl', 'bilbo/stylesheets/rule3.xsl', 'bilbo/stylesheets/cleaner.xsl']
-TO_JATS = ['bilbo/stylesheets/rule1.xsl', 'bilbo/stylesheets/rule2.xsl', 'bilbo/stylesheets/rule3.xsl', 'bilbo/stylesheets/cleaner.xsl', 'bilbo/stylesheets/rule4.xsl']
-
+TO_NS = ['bilbo/stylesheets/rule1.xsl', 'bilbo/stylesheets/rule2.xsl', 'bilbo/stylesheets/rule3.xsl'    , 'bilbo/stylesheets/cleaner.xsl', 'bilbo/stylesheets/rule4.xsl']
+TO_JATS = ['bilbo/stylesheets/rule.xsl', 'bilbo/stylesheets/cleaner.xsl', 'bilbo/stylesheets/tei-to-jats.xsl']
 
 class Converter(object):
     """
@@ -16,7 +16,9 @@ class Converter(object):
 
     def __init__(self, doc, xsl='TEI'):
         self.document = doc
-        self.xsl = TO_TEI if xsl=='TEI' else TO_JATS if xsl=='JATS' else None
+        #self.xsl = TO_TEI if xsl=='TEI' else TO_JATS if xsl=='JATS' else None
+        self.xsl = TO_TEI if xsl=='TEI' else TO_NS if xsl=='NO-NS' else None
+
 
     def get_transformer(self, xsl):
         root = etree.parse(xsl)
