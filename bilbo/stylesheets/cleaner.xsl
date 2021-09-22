@@ -10,6 +10,11 @@
 		<xsl:value-of select="."/>
 </xsl:template>
 
+<!--<xsl:template match="tei:bibl/tei:bibl[@bilbo]">
+		<xsl:value-of select="."/>
+</xsl:template>
+-->
+
 <xsl:template match="@bilbo"/>
 
 <!--identity template copies everything forward by default-->
