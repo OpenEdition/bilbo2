@@ -2,11 +2,12 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:tei="http://www.tei-c.org/ns/1.0">
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+<xsl:strip-space elements="*"/>
 
 <!-- identity transform -->
 <xsl:template match="@*|node()">
 	<xsl:copy>
-		<xsl:apply-templates select="@*|node()"/>
+		<xsl:apply-templates select="node()[boolean(normalize-space())]|@*"/>
 	</xsl:copy>
 </xsl:template>
 
