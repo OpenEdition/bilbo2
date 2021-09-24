@@ -38,3 +38,13 @@ fév
 avr
 jui
 déc
+gennaio
+febbraio
+marzo
+aprile
+giugno
+luglio
+agosto
+settembre
+ottobre
+dicembre
