@@ -1,4 +1,3 @@
-A
 A.
 Aad H.
 Aarne
@@ -973,7 +972,6 @@ A. Enzo
 A. Félix
 A. H. Shehab
 A. R.
-B
 B.
 B.A.
 Babacar
@@ -1274,7 +1272,6 @@ Burt C.
 Buster
 Byron
 Byun
-C
 C.
 C.A.
 Cabañero
@@ -1753,7 +1750,6 @@ Cyrille
 Czarina
 Czeslaw
 C. Mahé-Le
-D
 D.
 Dabié Désiré Axel
 Da-Chi
@@ -2084,7 +2080,6 @@ Dyala
 Dyanne
 Dylan
 Dzovinar
-E
 E.
 É.
 Eamonn
@@ -2495,7 +2490,6 @@ Ezequiel
 Ezio
 E. Ann
 E. R.
-F
 F.
 Fâ
 Fabian
@@ -3200,7 +3194,6 @@ Gyan
 Gyorgi
 György
 Gyula
-H
 H.
 Habib
 Habiba
@@ -3734,7 +3727,6 @@ Izhak
 Izumi
 I. A.
 I. N.
-J
 J.
 J.A.
 Jaâfar Ben
@@ -4444,7 +4436,6 @@ J. W.
 J. Y.
 J. E.
 J. F.
-K
 K.
 K.A.
 Kaan
@@ -4692,7 +4683,6 @@ Kyriaki
 Kyung-hee
 Kyung-mi
 Kyveli
-L
 L.
 L.A.
 Laan
@@ -6304,7 +6294,6 @@ Myrtille
 M. A.
 M. J.
 M. K.
-N
 N.
 N. A.
 Naara
@@ -6585,7 +6574,6 @@ Nurten
 Nusreta
 Nyunda ya
 N. C. F.
-O
 O.
 Obododimma
 Obrist
@@ -6702,7 +6690,6 @@ Oyeniyi
 Ozan
 Ö. Zeynep Oktav
 Özlem Ece
-P
 P.
 Pablo
 Pablo Antunha
@@ -7063,7 +7050,6 @@ P.-Y.
 P.Y.
 Pyra
 P. F.
-Q
 Q.
 Qiang
 Qing
@@ -7072,7 +7058,6 @@ Qu
 Quah Sy
 Quang Liem
 Quentin
-R
 R.
 R.A.
 Rabah
@@ -7516,7 +7501,6 @@ Ryuji
 R. C.
 R. Keith
 R. Tom
-S
 S.
 Saadi
 Saadia
@@ -8075,7 +8059,6 @@ Syrine
 Szabolcs
 S. A.
 S. M.
-T
 T.
 T. A.
 Tadahiko L. A.
@@ -8317,7 +8300,6 @@ Tyler
 Tze-ki
 Tzvetan
 Tzvi
-U
 U.
 Ubokudom E.
 Ueli
@@ -8351,7 +8333,6 @@ Ute
 Utzima
 Uwe
 Uzi
-V
 V.
 Vachel
 Vadim
@@ -8541,7 +8522,6 @@ Volodymyr
 Von Marc
 V.P.
 Vu The
-W
 W.
 Wade Clark
 Waël
@@ -8566,7 +8546,7 @@ Wang
 Wangbao
 Warren
 Wayne A.
-W.-B.
+W.B.
 Wei
 Weiyong
 W. El
@@ -8640,7 +8620,6 @@ Wulf
 Wyatt
 Wynne
 Wyss
-X
 X.
 Xabier
 Xavier
@@ -8667,7 +8646,6 @@ Xiufen
 Xu
 Xuan
 Xuelian
-Y
 Y.
 Yaakov
 Yacouba
@@ -8811,7 +8789,6 @@ Yvon-Carmen
 Yvonne
 Yvonne M.
 Y. Y.
-Z
 Z.
 Zachary
 Zahra
