@@ -3288,8 +3288,6 @@ Azzola
 AZZOLINA
 Azzolini
 ‘Azzûz
-B
-B.
 Ba
 Bâ
 Baader
@@ -10140,9 +10138,6 @@ Byron
 Bysted
 Bystrova
 Bοttο
-c.
-C
-C.
 CABAL
 Cabalion
 Caballer
@@ -15726,8 +15721,6 @@ Czouz-Tornare
 Czyba
 Czysz
 Cедакова
-D
-D.
 Da
 Daadouch
 Daaif
@@ -22030,7 +22023,6 @@ Ezvan
 Ezzelino II da Romano
 Ezzerelli
 Ezzine
-F.
 Faas
 Faba-Pérez
 Fabas-Serlooten
@@ -24481,11 +24473,10 @@ Fustec
 Fusulier
 Futian
 Füzesséry
-F. Walker
-f.-x. Burke
+Walker
+Burke
 Fynn
 Fyson
-G.
 Gaakeer
 Gaatone
 Gabaccia
@@ -24511,7 +24502,7 @@ Gaberel
 Gaberel-Payen
 Gabert
 Gabet
-Gabiano (héritiers de Balthazar de)
+Gabiano
 Gabilan
 Gabillet
 Gabilliet
@@ -26519,7 +26510,7 @@ Giusberti
 Giuseppe
 Giuseppe Aiello
 Giuseppe Camodeca
-Giuseppe (dit le Cavalier d'Arpin)
+Giuseppe
 Giusfredi
 Giust-Desprairies
 Giusti
@@ -27433,9 +27424,8 @@ Goze
 Gozlan
 Gozzi
 Gozzoli
-G. Piscitelli
-G. Poutrus
-G.-R.
+Piscitelli
+Poutrus
 Graaf
 Graaff
 Grab
@@ -28290,7 +28280,6 @@ Guéron
 Gueroult
 Guerout
 Guerra
-Guerra (†)
 Guerra-Borges
 Guerra de Avellaneda
 Guerra Martinière
@@ -28351,7 +28340,6 @@ Guezennec
 Guezille
 Guffond
 Guffroy
-Guffroy (†)
 Gugelot
 Guggenberger
 Guggenbühl
@@ -28411,7 +28399,7 @@ Guidolin
 Guidonet
 Guidoni
 Guidot
-Guido Terreni OCarm.
+Guido Terreni OCarm
 Guienne
 Guieu
 Guiffan
@@ -28833,8 +28821,7 @@ Gyssels
 Gyulezev
 Gyurcsik
 Gzil
-G. Županov
-H.
+Županov
 Ha
 Haack
 Haag
@@ -30083,7 +30070,6 @@ HERMANN
 Hermann De Franceschi
 Hermann De Franceschi
 Hermans
-Hermans S.J.
 Hermant
 Hermany
 Hermary
@@ -30984,7 +30970,7 @@ Hoyos
 Hoyt-Wakefield
 Hoz
 Hozé
-H. Philoleau
+Philoleau
 Hrabanski
 Hrachovec
 Hradil
@@ -31302,7 +31288,6 @@ Hyppolite
 Hyvärinen
 Hyvernat-Duchêne
 Hyvert
-I.
 Iabedzka
 Iaccarino Idelson
 Iacono
@@ -31430,16 +31415,12 @@ Ihaddadene
 Ihadjadene
 Ihalouine
 Ihazrir
-I. Hellín Martínez
+Hellín Martínez
 Ihimaera
 Ihl
 Ihonvbere
 Ihuel
-i Huesca
-II
-II)
-(III)
-III
+Huesca
 Iiyama
 Ijaiya
 Ijsseling
@@ -31453,7 +31434,6 @@ Ikhlef
 Ikime
 Ikni
 Ikpe
-I.L.
 Ilahiane
 Ilakkuvan
 Ilarregui
@@ -31577,14 +31557,6 @@ Inouë
 Inquimbert
 INSEL
 Inserra
-Institut de recherche et d'histoire des textes
-Institut d’histoire des relations internationales contemporaines (Paris)
-Institut français de Naples
-Institut français du Proche-Orient
-Institut national d'études démographiques
-Institut national du sport et de l'éducation physique
-Instituto Indigenista Interamericano
-international
 Inthano
 Intrand
 Introduction
@@ -31617,7 +31589,6 @@ Iosipescu
 Iossif
 Iovine
 Iovino
-Ip
 İpek
 Ipola
 Ipp
@@ -31629,7 +31600,6 @@ Iralde
 Iranzo
 Iranzo Abellán
 Iravedra
-Ireland
 Irene Sensini
 Ireton
 Irianni
@@ -31658,7 +31628,7 @@ Irurtzun
 Irvine
 Irving
 Irwin
-‘Îsâ
+Îsâ
 Isaac
 Isaakidou
 Isabel
@@ -31716,7 +31686,7 @@ Isler
 Isler-Kerényi
 Ismaïl
 Ismaili
-Ismaïl (Khédive)
+Ismaïl
 Ismard
 Isnard
 Isnart
@@ -31729,7 +31699,6 @@ Isou
 Israel
 Israël
 Israëli
-‘Issa
 Issa
 Issaev
 Issaieva
@@ -31808,11 +31777,9 @@ Izquierdo
 Izquierdo Domingo
 Izri
 Izsák
-‘Izz al-Dīn ibn Šaddād
+Izz al-Dīn ibn Šaddād
 Izzi
 Izzo
-J.
-J.A.
 Jaag
 Jaanine
 Jääts
@@ -32445,18 +32412,16 @@ Jez
 Jézégou
 Jezek
 Jézéquel
-J.F.
-J. Golsan
-J. Grieco
-J. Grieco
-J.Gueunier
-J. Hamel
+Golsan
+Grieco
+Gueunier
+Hamel
 Jhangiani
-J. H. Dekker
+Dekker
 Jhean-Larose
-J. Heather
-J. Hernández
-J. Hountondji
+Heather
+Hernández
+Hountondji
 Ji
 Jia
 Jian
@@ -32508,17 +32473,13 @@ Jisa
 Jisi
 Jisun Bae
 JI ZHE
-J. JOUGHIN
-J.J.P.Oud
-J. Jully
-J-L.
-J.L
-J.L.
-J. Long
-J.M.
-J. Malengreau
-J. Maxwell
-J. Moser
+JOUGHIN
+Oud
+Jully
+Long
+Malengreau
+Maxwell
+Moser
 Jno-Baptiste
 Joachim
 Joan
@@ -32863,15 +32824,12 @@ Joy Marrer
 Jozami
 Jozan
 József
-J. Porfeli
-J.Portes
-Jr
-Jr.
-J.R
+Porfeli
+Portes
 Jreisat
-J. S. Alves
+Alves
 Jskowiak
-J. Teece
+Teece
 Ju
 Jua
 Juan
@@ -33039,7 +32997,6 @@ Juvet
 Juvigné
 Juvin
 J. Wosh
-K.
 Ka
 Kâ
 Kaag
@@ -33263,7 +33220,7 @@ Kammerl
 Kam Nakache-Balmer
 Kamoun
 Kamoun-Chouk
-Kamp †
+Kamp
 Kamphans
 Kampschulte
 KAMRANE
@@ -33292,7 +33249,7 @@ Kanelopoulos
 Kanemann
 Kang
 Kangas
-Kangnae)
+Kangnae
 KANG XIAOFEI
 Kani Konaté
 Kanimba Misago
@@ -33682,7 +33639,6 @@ Kemény
 Kemertelidze
 Kemkong
 Kemnitz
-Kemnitz †
 Kemp
 Kempa
 Kempadoo
@@ -33804,7 +33760,7 @@ Kervern
 Kervran
 Kervyn
 Kerzulec
-K. Escalanti
+Escalanti
 Keseljevic
 Keshen
 Keskin
@@ -33847,7 +33803,7 @@ Keyser
 Keyssar
 Keyuan
 Kezich
-K. Gold
+Gold
 Kgomo
 Khabba
 Khabbache
@@ -33926,7 +33882,6 @@ Kheria
 Khiari
 Khihel
 Khilkova
-K.H.J.
 Khlevniuk
 Khlif
 Khlopina
@@ -34629,7 +34584,6 @@ KOTOBI
 Kotowicz
 Kotroni
 Kott
-Kott‎
 KOTT
 Kottelat
 Kottis
@@ -34752,9 +34706,9 @@ Kozulj
 Kpade
 Kpatcha
 Kpatchevi
-K. P. Chou
+Chou
 Kpéra
-K. Perry
+Perry
 Kponton
 Kra
 Kraan
@@ -35139,9 +35093,6 @@ Kytzler
 Kyung‑mi
 Ky-Zerbo
 Kιlιç
-L
-L.
-L2
 Laacher
 Laachrate
 Laafifi
@@ -39483,7 +39434,6 @@ Lux
 LUX
 Luxán Meléndez
 Luxán Meléndez
-Luxembourg)
 Luxereau
 LUX-STERRITT
 Luy
@@ -39533,8 +39483,6 @@ Lyster
 Ly-Tio-Fane
 Lyubareva
 Ly Wane
-M
-M.
 Ma
 Maalouf
 Maalouf Monneau
@@ -45137,8 +45085,6 @@ Myśliwski
 Mytelka
 Mzali
 Mейлах
-N
-N.
 Naah
 Naas
 Nabat
@@ -46610,8 +46556,6 @@ Occelli
 Occhietti
 Occhini
 Occhipinti
-Occidente
-(OCDE)
 Ochem
 Ôchi
 Ochiana
@@ -47511,10 +47455,6 @@ Ozouf-Marignier
 Ozu
 Ozwald
 Özyiğit
-P
-P.
-P.1
-P.A.
 Paarup-Laursen
 Pabijanek
 Pabion
@@ -47689,7 +47629,6 @@ Pais de Brito
 Paisley
 Paisnel
 Pais-Simon
- Paiva
 Paiva
 Paiva Ferreira
 Paivandi
@@ -49544,11 +49483,10 @@ Pfirsch
 Pfister
 Pfister-Langanay
 Pfitzner
-P. Fitzpatrickitzpatrick
 Pflimlin
 Pfurtscheller
-P. Grammenidis
-P. Guillén
+Grammenidis
+Guillén
 Phalip
 Pham
 Phạm
@@ -49564,7 +49502,6 @@ Pharand
 Pharès
 Pharo
 Phayer
-Ph.D.
 Phèdre
 Phelan
 PHELAN
@@ -51602,15 +51539,14 @@ Puyou
 Puythorac
 Puyuelo
 Puzzo
-P.Vautherin
-Py
+Vautherin
 PY
 Pybourdin
 Pye
 Pym
 Pynsent
 Pynte
-Pyŏngsam)
+Pyŏngsam
 Pyrah
 Pyrooz
 Py-Saragaglia
@@ -51619,7 +51555,6 @@ Pyta
 Pytell
 Python
 Pοζακη
-Q.
 Qacha
 Qaddhafî
 Qadéry
@@ -51856,8 +51791,6 @@ Qunxing
 Quochi
 Quod
 Qwaider
-R
-R.
 Raab
 Raabe
 Raad
@@ -55168,9 +55101,8 @@ Ryzhova
 Ryzova
 Rzepa
 Rzepecki
-R. Zeron
+Zeron
 Rzewuski
-S.
 Sá
 Sà
 Saad
@@ -57117,7 +57049,6 @@ Sciascia
 Scicchitano
 Scieller
 sciences
-Scientific and Technical Information Department - CNRS
 Scieur
 Scilabra
 Scimeca
@@ -57148,7 +57079,7 @@ Scopello
 Scoppola
 Scopsi
 Scorcese
-S. Cordeiro
+Cordeiro
 Scordia
 Scornet
 Scorzelli
@@ -57178,8 +57109,8 @@ Scullion
 Scully
 Scurtu
 Scutaru
-S. Dean
-S. Diop
+Dean
+Diop
 Sdvižkov
 Seabra
 Seabra Neves
@@ -58644,14 +58575,6 @@ Sobrino Simal
 Soccard
 Soccavo
 Socha
-Société des historiens médiévistes de l’Enseignement supérieur public
-Société des historiens médiévistes de l’Enseignement supérieur public
-Société des historiens médiévistes de l'Enseignement supérieur public
-Société des historiens médiévistes de l’Enseignement supérieur public
-Société des Historiens Médiévistes de l'Enseignement Supérieur Public
-Société des Historiens Médiévistes de l’Enseignement Supérieur Public
-Société d'histoire du droit et des institutions des pays de l'Ouest de la France
-société (GRES)
 Sock
 Sockett
 Socolow
@@ -59154,7 +59077,7 @@ Spaventa
 Spaziante
 Spazzali
 Spear
-S. Pearson
+Pearson
 Spearson Goulet
 Speciale
 Speck
@@ -60216,8 +60139,6 @@ Szurmuk
 Szymański
 Szymczak
 Szypulski
-T
-T.
 Taaroa
 Tabacchi
 Tabah
@@ -60390,7 +60311,6 @@ Tallec
 Tallet
 Tallier
 Tallineau
-Tallineau‎
 Tallon
 Tallotte
 Tall Thiam
@@ -62798,7 +62718,7 @@ Twain
 Twidale
 Twiesselmann
 Twinam
-T. Wolfe
+Wolfe
 Twyman
 Tyagi
 Tyc
@@ -62833,7 +62753,6 @@ Tzortzis
 Tzourio-Mazoyer
 Tzu-Chin
 Tzvetkova
-U
 Ubaldo Ribeiro
 Ubaud-Bergeron
 Ubbiali
@@ -62917,12 +62836,10 @@ Umhang
 Ümit
 Umland
 Umlauf
-UMR 6042 4
 Unamuno
 Unbescheid
 Unda
 Underhill
-UNESCO
 Unfried
 Ungaretti
 Ungari
@@ -62933,11 +62850,6 @@ Ungerson
 Üngör
 Unguendoli
 Uni
-UniFrance
-Union européenne
-Univ
-Université Laval
-Université McGill
 Unnasch
 Unnayan
 ÜNSALDI
@@ -63160,7 +63072,6 @@ Valadeau
 Valadez
 Valadié
 Valadier
-Valadier sj
 Valais
 Valaison
 Valamoti
@@ -63357,14 +63268,6 @@ Vana
 Vanacker
 Van Acker
 Van Allen
-Van&amp;#160Assche
-Van&amp;#160Balberghe
-Van&amp;#160Brien
-Van&amp;#160Bunnen
-Van&amp;#160Campenhoudt
-Van&amp;#160de&amp;#160Kerchove
-Van&amp;#160de&amp;#160Putte
-Van&amp;#160Eynde
 Van Andringa
 Vanara
 Van Asperen
@@ -64281,7 +64184,6 @@ Vergara Figueroa
 Vergara Johnson
 Vergara Montero
 Vergaray Lara
-Vergata&amp;nbspLa
 Vergata La
 Vergati
 Vergauwen
@@ -64597,7 +64499,6 @@ Vibart
 Viberg
 Vibert
 Vibert-Guigue
-Vibert-Guigue)
 Vibert‑Guigue
 Vicard
 Vicard 
@@ -64642,7 +64543,7 @@ Vidal Molina
 Vidal-Naquet
 Vidal-Rojas
 Vidal Rojas
-Vidal ϯ
+Vidal
 Vidari
 Vidas
 Vidaurrázaga
@@ -65172,7 +65073,7 @@ Vix
 Vizcaíno Sánchez
 Vizcarra
 Vizynos
-V. Kemper
+Kemper
 Vlach
 Vlachogiannis
 Vlad
@@ -65435,7 +65336,7 @@ Vrinat-Nikolov
 Vrints
 Vrolijk
 Vroom
-V. Rose
+Rose
 Vrousalis
 Vrydaghs
 Vryonis
@@ -65470,15 +65371,13 @@ Vulliez
 Vultur
 Vútova
 Vu-Van
-V. Vernova
+Vernova
 Vydrin
 Vye
 Vygotski
 Vyssotski
 Vyt
 Vyzantios
-W
-W.
 Wa
 Waal
 Waardt
@@ -66441,7 +66340,7 @@ Woycinkiewicz
 Woyke
 Wozniak
 Wozny
-W. Pietsch
+Pietsch
 Wrede
 Wrege-Rassier
 Wren-Lewis
@@ -66453,7 +66352,7 @@ Wrobel
 Wroblewski
 Wrona
 Wruck
-W. Schäfer
+Schäfer
 Wtterwulghe
 Wu
 Wu-Beyens
@@ -66480,7 +66379,7 @@ Württemberg
 Wurzel
 Wuscher
 Wüst
-W. White
+White
 Wyart
 Wyczański
 Wydenbach
@@ -66502,7 +66401,6 @@ Wyschnegradsky
 Wyss
 Wyss-Neel
 Wyvekens
-X.
 Xandry
 Xanthakou
 XANTHAKOU
@@ -66555,8 +66453,6 @@ Xuelian
 Xužanazarov
 Xypas
 Xypolopoulou
-Y
-Y.
 Ya
 Yabié
 Yabkowski
