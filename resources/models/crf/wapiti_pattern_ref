@@ -78,9 +78,10 @@ U130:%x[0,13]
 U131:%x[1,13]
 
 # Italic xml (ITALIC,NOITALIC)
-U139:%x[-1,14]
-U140:%x[0,14]
-U141:%x[1,14]
+# Uncomment if you have listfeatureXML
+#U139:%x[-1,14]
+#U140:%x[0,14]
+#U141:%x[1,14]
 
 
 # Bigram
