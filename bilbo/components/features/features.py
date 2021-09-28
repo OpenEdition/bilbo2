@@ -40,7 +40,8 @@ class FeatureHandler(Extractor):
             feat_keys.append(key_name)
         for key_name, _, _  in self.lst_fct_ext:
             feat_keys.append(key_name)
-        feat_keys.extend(self.lst_fct_xml)
+        if (self.lst_fct_xml):
+            feat_keys.extend(self.lst_fct_xml)
         self._keys = feat_keys
 
     def format_to_list(self, doc):
@@ -96,15 +97,15 @@ class FeatureHandler(Extractor):
         document.keys = self._keys
         for section in document.sections:
             for i in range(len(section.token_str_lst)):
-                logger.debug('Start to process XML features')         
-                for name in self.lst_fct_xml:
-                    f_xml = getattr(XmlFeature(), name, None)
-                    feature = section.tokens[i].features
-                    print(section.tokens[i].str_value)
-                    if f_xml is None:
-                        raise Exception("la fonction n'existe pas dans le code")
-                    else:
-                        feature[name] = f_xml(section, i)
+                if (self.lst_fct_xml):
+                    logger.debug('Start to process XML features')
+                    for name in self.lst_fct_xml:
+                        f_xml = getattr(XmlFeature(), name, None)
+                        feature = section.tokens[i].features
+                        if f_xml is None:
+                            raise Exception("la fonction n'existe pas dans le code")
+                        else:
+                            feature[name] = f_xml(section, i)
 
                 # Features locales
                 logger.debug('Start to process local features')         
