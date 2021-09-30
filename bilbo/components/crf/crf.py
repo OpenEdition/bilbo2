@@ -31,7 +31,7 @@ class Crf(Estimator):
         self.name = self.parser.getArgs(self.cfg_file, "name")
         self.seed = self.parser.getArgs(self.cfg_file, "seed")
         self.option_crf = self.parser.getArgs(self.cfg_file, "optionCrf")
-        self.verbose_crf = False if self.parser.getArgs(self.cfg_file, "verboseCrf") else True
+        self.verbose_crf = self.parser.getArgs(self.cfg_file, "verboseCrf", type_opt='eval')[0]
         self.algo_crf = self.parser.getArgs(self.cfg_file, "algoCrf")
         self.constraint = self.parser.getArgs(self.cfg_file, "constraint", type_opt='dict')
 
