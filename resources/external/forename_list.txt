@@ -1,5 +1,5 @@
 A.
-Aad H.
+Aad
 Aarne
 Aaron
 Aaron Victor
@@ -80,9 +80,9 @@ Abu Turab
 A.Çaglar
 Achille
 Achim
-Achim A.
+Achim
 Ada
-A. da
+da
 Adalgiza
 Adam
 Adama
@@ -90,7 +90,7 @@ Adam A.
 Adama Aly
 Adamou
 Adeeb
-Adékin E.
+Adékin
 Adel
 Adela
 Adélaïde
@@ -108,34 +108,33 @@ Adina
 Adja Ferdinand
 Adjossou
 Adolfo
-Adolfo J.
+Adolfo 
 Adolfo León
 Adolfo León Maya
 Adolphe
-Adolphe C.
+Adolphe
 Adrian
 Adriana
 Adriana Ávila
-Adriana B.
+Adriana
 Adriana María
-Adrian E.
+Adrian
 Adriano
 Adrien
 Adrien de
 Adrienna
 Adrienne
-Adrienne E.
+Adrienne
 A. E.
 A.E.
 Aengus
 Ae-Young
 Afaf Lutfi al-Sayyid
 Afe
-Affin O.
+Affin
 Afonso
 Afra
 Aftandil
-Aftandil S.
 Aftondil
 Agathe
 Aggeliki
@@ -166,9 +165,8 @@ Ahmad Sayf al-Islâm
 Ahmed
 Ahmed Abdel
 Ahmed Taha
-Ahmed V.
+Ahmed
 Ahmet
-Ahmet T.
 Ahsène
 Aïcha
 Aïcha Liviana
@@ -208,24 +206,14 @@ A.L.
 Alaa
 Alaa Aldin
 Alain
-Alain A.
-Alain de
-Alain G.
-Alain J.
+Alain
 Alain-Jacques
 Alain Joseph
 Alain Laurent
 Alain-Noël
-Alain P.
-Alain J.
 Alan
-Alan B
-Alan D.
-Alan L.
-Alan P.
-Alan R.
 Alastair
-A. Laure
+Laure
 Alba
 Alba Lucía
 Alban
@@ -249,18 +237,15 @@ Albina
 Albrecht
 Alcède
 Alcides
-Alcione M.
+Alcione
 Aldino
 Aldo
-Aldo A.
-Aldomar A.
-Alec G.
+Aldomar
+Alec
 Aleh
 Alejandra
 Alejandra Aquino
 Alejandro
-Alejandro E.
-Alejandro M.
 Alejandro Sacbé Shuttera
 Alejandro von
 Alejandro Martin
@@ -268,13 +253,13 @@ Alejo
 Aleksander
 Aleksandr
 Aleksandra
-Aleksandr G.
-Aleksandr N.
-Aleksei A.
-Aleksej V.
+Aleksandr
+Aleksandr
+Aleksei
+Aleksej
 Aléna
 Alenoush
-Aleric J.
+Aleric
 Alessander
 Alessandra
 Alessandra Babler
@@ -329,11 +314,7 @@ Ali Aït
 Aliana
 Alice
 Alice De
-Alice L.
-Alice M.
 Alicia
-Alicia G.
-Alicia M.
 Alicia Sylvia Gijón
 Alicja
 Alida
@@ -354,11 +335,8 @@ Alkassoum
 Alkis
 Allain
 Allan
-Allan M.
 Allaoua
 Allen
-Allen J.
-Allen J.
 Allison
 Almudena
 Almudena Delgado
@@ -383,7 +361,6 @@ Alvaro Román
 Alvydas
 Alyssa Goldstein
 Alzouma
-A.-m.
 A. M.
 A.-M.
 A.M.
@@ -440,7 +417,6 @@ Amy
 Amy Gilman
 Amy J.
 Amzat
-An
 A. N.
 Ana
 Ana A.
@@ -503,7 +479,7 @@ Anatolij E.
 Anatoly
 Ana Zabalza
 Ana Isabel
-Ana R.
+Ana
 Anca
 Anders
 Anders Lund
@@ -522,12 +498,8 @@ Andrea Margarita
 Andrea Pandolfo
 Andreas
 Andréas
-Andreas C.
-Andreas W.
-Andrea C.
-André C.
+André
 Andre Carlo
-André D.
 André de
 Andrée
 Andreea
@@ -544,13 +516,11 @@ Andréi
 Andréï
 Andreia
 Andréia da Silva
-Andrei V.
-Andrei N.
+Andrei
 Andrej
-Andrej E.
 André John
 André-John
-Andrej P.
+Andrej
 Andrej Viktorovič
 André-Louis
 André Luis Ramos
@@ -558,7 +528,6 @@ André-Marie
 Andres
 Andrés
 Andrès
-Andrés G.
 Andrés Ignacio
 Andres Max
 Andrés Ríos
@@ -566,11 +535,11 @@ Andreu Coll
 André-Valentin
 Andrew
 Andrew Martin
-Andrew N.
-Andrew R.
+Andrew
+Andrew
 Andrey
 André-Yves
-André D.
+André
 Andrij V.
 Andriy
 Andromachi
@@ -972,6 +941,7 @@ A. Enzo
 A. Félix
 A. H. Shehab
 A. R.
+B
 B.
 B.A.
 Babacar
