@@ -57,7 +57,7 @@ class BilboParser:
             if type_opt== 'dict':
                 return eval("%s" % args.get(section_pipe, opt))
         except NoOptionError as e:
-            logger.warn(e)
+            logger.warning(e)
             return None
             
 
